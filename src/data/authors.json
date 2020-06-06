@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Faima Lima",
+        "image": "./images/author-1.jpg",
+        "social": {
+            "facebook": "https://facebook.com",
+            "twitter": "https://twitter.com",
+            "instagram": "https://instagram.com",
+            "linkedin": "https://linkedin.com",
+            "youtube": "https://youtube.com"
+        },
+        "tagline": "Content Writter based on USA.",
+        "bio": "I love to work with fun, also like watching movies and a food addicted person. I am a Web Developer with 5 years of experience. I have damn creative idea's at Front end design and Back end too"
+    }
+]

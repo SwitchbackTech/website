@@ -1,0 +1,15 @@
+[
+    {
+        "id": "contact-page-header",
+        "title": "Contact",
+        "tagline": "Hit us up"
+    },
+    {
+        "id": "contact-page-banner",
+        "banner": "./images/banner/contact-banner.jpg"
+    },
+    {
+        "id": "contact-page-content",
+        "title": "SEND US A MESSAGE"
+    }
+]
