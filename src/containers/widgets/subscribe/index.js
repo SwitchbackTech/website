@@ -8,7 +8,7 @@ const SearchWidget = ({widgetStyle, widgetTitleStyle, inputStyle}) => {
         <WidgetBox {...widgetStyle}>
             <WidgetTitle {...widgetTitleStyle}>Subscribe</WidgetTitle>
             <FormWrapper>
-                <SubscribeText>Leave your email here and stay informed about our promotions and new arrivals.</SubscribeText>
+                <SubscribeText>No spam. Unsubscribe anytime</SubscribeText>
                 <Mailchimp/>
             </FormWrapper>
         </WidgetBox>

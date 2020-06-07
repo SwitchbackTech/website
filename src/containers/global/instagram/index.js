@@ -34,7 +34,7 @@ const Instagram = ({ headingCSS, textCSS }) => {
       <Container>
         <Row>
           <Col lg={12}>
-            <Heading {...headingCSS}><FiInstagram /> <Text {...textCSS}>Me On Instagram</Text></Heading>
+            <Heading {...headingCSS}><FiInstagram /> <Text {...textCSS}>Peep the gram</Text></Heading>
           </Col>
         </Row>
         <Row>

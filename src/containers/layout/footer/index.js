@@ -53,19 +53,17 @@ const Footer = (props) => {
                         <Col md={{ size: 3, offset: 2 }} lg={{ size: 2, offset: 3 }}>
                             <FooterWidget {...menuOneWidget}>
                                 <List {...footerMenuOne}>
-                                    <ListItem><Anchor path="/">ARCHIVE NOVEMBER</Anchor></ListItem>
                                     <ListItem><Anchor path="/">TRENDING STORIES</Anchor></ListItem>
-                                    <ListItem><Anchor path="/">FEATURES POST</Anchor></ListItem>
-                                    <ListItem><Anchor path="/">POPULARS NEWS</Anchor></ListItem>
+                                    <ListItem><Anchor path="/">featured posts</Anchor></ListItem>
                                 </List>
                             </FooterWidget>
                         </Col>
                         <Col md={{ size: 4, offset: 1 }} lg={{ size: 3, offset: 1 }}>
                             <FooterWidget>
                                 <AddressWidget>
-                                    <Anchor {...addressAnchor} path="tel:+8801923088574">+88 000 345589</Anchor>
-                                    <Anchor {...addressAnchor} path="mailto:info@example.com">INFO@EXAMPLE.COM</Anchor>
-                                    <Text {...addressText}>221B , Baker Street, Marylebone <br /> London NW1 6XE, United Kingdom. </Text>
+                                    <Anchor {...addressAnchor} path="tel:9209770813">(920) 977-0813</Anchor>
+                                    <Anchor {...addressAnchor} path="mailto:hello@switchback.tech">hello@switchback.tech</Anchor>
+                                    <Text {...addressText}>Minneapolis, Minnesota <br /> United States </Text>
                                 </AddressWidget>
                             </FooterWidget>
                         </Col>
@@ -81,15 +79,15 @@ const Footer = (props) => {
                         <Col md={{ size: 3, offset: 1 }} lg={{ size: 2, offset: 2 }} xl={{ size: 2, offset: 2 }}>
                             <FooterWidget {...menuTwoWidget}>
                                 <List {...footerMenuTwo}>
-                                    <ListItem><Anchor path="/">About Me</Anchor></ListItem>
-                                    <ListItem><Anchor path="/">Contact With Me</Anchor></ListItem>
-                                    <ListItem><Anchor path="/">Faq</Anchor></ListItem>
+                                    <ListItem><Anchor path="/">About</Anchor></ListItem>
+                                    <ListItem><Anchor path="/">Contact</Anchor></ListItem>
+                                    <ListItem><Anchor path="/">FAQ</Anchor></ListItem>
                                 </List>
                             </FooterWidget>
                         </Col>
                         <Col md={{ size: 4, offset: 1 }} lg={{ size: 4, offset: 1 }}>
                             <FooterWidget>
-                                <Text {...copyright}>Copyright © 2020, FATIMA</Text>
+                                <Text {...copyright}>© 2020 Switchback All rights reserved</Text>
                             </FooterWidget>
                         </Col>
                     </Row>

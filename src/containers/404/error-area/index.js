@@ -17,8 +17,8 @@ const ErrorArea = ({headingCSS, btnCSS}) => {
                             </ErrorTopText>
                             <ErrorBottomText>
                                 <img src={Emoji} alt="Sad Emoji"/>
-                                <Heading {...headingCSS}>Sorry, This Page Was Lost.</Heading>
-                                <Button {...btnCSS}>Back To Homepage</Button>
+                                <Heading {...headingCSS}>Uh oh, this page was lost.</Heading>
+                                <Button {...btnCSS}>Back to safety</Button>
                             </ErrorBottomText>
                         </ErorrContent>
                     </Col>

@@ -115,10 +115,10 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
                                             disabled={!hasMore} 
                                             onClick={loadMoreHandler} 
                                             {...loadMoreBtn} 
-                                            icon={<FiLoader/>}>Load More Article</Button>
+                                            icon={<FiLoader/>}>Gimmie more</Button>
                                     </LoadMoreBtnWrap>
                                 )}
-                                {!hasMore && <p>There is no more posts to show.</p>}
+                                {!hasMore && <p>That's all, folks!</p>}
                             </Col>
                         </Row>
                     </Container>

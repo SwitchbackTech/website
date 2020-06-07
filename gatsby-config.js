@@ -13,7 +13,7 @@ module.exports = {
       social: {
         facebook: 'https://facebook.com',
         twitter: 'https://twitter.com',
-        instagram: 'https://instagram.com',
+        instagram: 'https://instagram.com/switchback.tech',
         linkedin: 'https://linkedin.com',
         youtube: 'https://youtube.com',
       }

@@ -8,11 +8,11 @@
     {
         "id": "home-mailchimp-content",
         "title": "Contact Us",
-        "desc": "Leave your email here and stay informed about our promotions and new arrivals."
+        "desc": "Stay in the loop"
     },
     {
         "id": "home-cta-content",
-        "title": "Get in touch <span>with me...</span>",
+        "title": "<bold>Get in touch</bold>",
         "desc": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum.",
         "image": "./images/cta-big-image.jpg",
         "path": "/contact-us"

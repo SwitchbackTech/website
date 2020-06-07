@@ -74,7 +74,7 @@ const RecentPostArea = (props) => {
                                 icon={<FiLoader/>}>Load More Article</Button>
                         </LoadMoreBtnWrap>
                     )}
-                    {!hasMore && <p>There is no more posts to show.</p>}
+                    {!hasMore && <p>That's all, folks!</p>}
                 </Col>
             </Row>
         </RecenPostWrap>
