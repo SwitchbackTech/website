@@ -2,7 +2,7 @@
     {
         "id": "about-page-header",
         "title": "about switchback",
-        "tagline": "Hello Welcome to Switchback's blog"
+        "tagline": ""
     },
     {
         "id": "about-page-banner",
@@ -11,34 +11,28 @@
     {
         "id": "about-page-content",
         "top_content": {
-            "heading": "There are many variations of passages of Lorem Ipsumn available but the majority have suffered alteration.",
+            "heading": "Building Epic Software",
             "content": {
-                "text1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks.",
-                "text2": "Necessary, making this the first true generator on the Internet. It re are many variations of passages of Lo rem Ipsum available, but the majority have suffered alteration in some form, by injectedeed eedhumour, or randomised words which don't look even slightly believable."
+                "text1": "We create Android apps for those doing badass outdoor things. This is where we share our knowledge & opinions.",
+                "text2": "('We' currently just refers to Ty Hitzeman, who is figuring out how to apply his tech skills to the outdoors adventure space.)"
             }
         },
         "list_left": {
-            "heading": "Ordered & Unordered Lists.",
+            "heading": "",
             "items": [
-                "Yet this above sewed flirted opened ouch",
-                "Goldfinch realistic sporadic ingenuous",
-                "Abominable this abidin far successfully ",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing"
+                ""
             ]
         },
         "list_right": {
-            "heading": "Ordered & Unordered Lists.",
+            "heading": "",
             "items": [
-                "Yet this above sewed flirted opened ouch",
-                "Goldfinch realistic sporadic ingenuous",
-                "Abominable this abidin far successfully ",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing"
+                ""
             ]
         },
         "bottom_content": {
-            "heading": "Ordered & Unordered Lists.",
+            "heading": "",
             "content": {
-                "text1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks."
+                "text1": ""
             }
         }
     }
