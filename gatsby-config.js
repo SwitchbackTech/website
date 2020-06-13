@@ -81,9 +81,9 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        // type: `hashtag`,
+        // type: `user-profile`,
         // hashtag: `naturesbeauty`,
-        username: `rainbowit10`,
+        username: `switchback.tech`,
         // access_token: "EAAJfJNguJz4BAI3u9hxFCVJUwVgT39AzmO7nyRAPPEhHEiyyElx7cYSxbv5hHWMyopFM00R0wh7wfoghe7vfePBteFp9pKKkDJKdAPl0b1fKTkWu2s9nYhiYrxHnq28n3mZC4HUSYwxJeaurinARaOqxOzaVfwlBJZBEMApAZDZD",
         // instagram_id: "rainbowit5"
       },
