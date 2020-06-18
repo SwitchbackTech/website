@@ -3,7 +3,7 @@
 ## Running the app locally
   Navigate into your new site’s directory and start it up.
 
-    ```shell
+    ```shell 
     cd website
     gatsby develop
     ```
