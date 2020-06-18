@@ -1,18 +1,18 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
-date: "2020-02-20 05:00:00"
+title: 'Video format blog title'
+date: "2020-02-21 10:30:00"
 author: 'Faima Lima'
-format: 'image'
-image: '../images/blog-1.jpg'
+format: 'video'
+video_link: 'https://www.youtube.com/watch?v=ZOoVOfieAF8'
+image: '../images/blog-9.jpg'
 category: technology
 tags: 
     - react
-    - gatsby
-    - styled components
-is_featured: true
+    - markdown
+    - gatsby blog
 ---
 
-One primary reason is that bees are vital pollinators, on which human agriculture depends. Bees transfer pollen between plants allowing them to reproduce and grow. The Food and Agriculture Organisation (FAO) of the UN has found that 35% of global agricultural land, consisting of 87 major food crops, is dependent on pollination by bees
+Honeybees are a minority among bee species. Sri Lanka has 148 species of bees, of which 21 are endemic. Most bees are classified as social bees, and the rest are solitary bees, who live alone in nests, most often underground. Unlike solitary bees and some other social bee species that are happy to feed on a variety of plants, honeybees are loyal to one or a few select plant species
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks.
 

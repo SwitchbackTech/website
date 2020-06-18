@@ -1,18 +1,17 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
-date: "2020-02-20 05:00:00"
+title: 'the choice is easy blinded to the needs of hardship'
+date: "2020-02-21 10:00:00"
 author: 'Faima Lima'
 format: 'image'
-image: '../images/blog-1.jpg'
+image: '../images/blog-8.jpg'
 category: technology
 tags: 
     - react
-    - gatsby
-    - styled components
-is_featured: true
+    - markdown
+    - gatsby blog
 ---
 
-One primary reason is that bees are vital pollinators, on which human agriculture depends. Bees transfer pollen between plants allowing them to reproduce and grow. The Food and Agriculture Organisation (FAO) of the UN has found that 35% of global agricultural land, consisting of 87 major food crops, is dependent on pollination by bees
+Diseases like these are not the only threat to bee populations. The use of pesticides and herbicides, as well as the growing urban sprawl, all have detrimental effects. Although, the extinction of bees would not lead to famine—since most cereal crops are wind-pollinated, the majority of fruits and vegetables are insect-pollinated and without bees these would have to be pollinated manually, or by robots—which is unlikely to happen in Sri Lanka anytime soon. Crops that are not cost-effective to hand or robot-pollinate, would likely be lost
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks.
 

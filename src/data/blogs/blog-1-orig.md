@@ -1,5 +1,5 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
+title: 'Never Lose Your Technology Again'
 date: "2020-02-20 05:00:00"
 author: 'Faima Lima'
 format: 'image'

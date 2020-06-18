@@ -1,18 +1,18 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
-date: "2020-02-20 05:00:00"
+title: 'Quote format blog title'
+date: "2020-03-26 10:00:00"
 author: 'Faima Lima'
-format: 'image'
-image: '../images/blog-1.jpg'
+format: 'quote'
+quote_text: "Courage is the first of human qualities because it is the quality which gurantees the others"
+quote_author: "Aristotle" 
 category: technology
 tags: 
     - react
-    - gatsby
-    - styled components
-is_featured: true
+    - markdown
+    - gatsby blog
 ---
 
-One primary reason is that bees are vital pollinators, on which human agriculture depends. Bees transfer pollen between plants allowing them to reproduce and grow. The Food and Agriculture Organisation (FAO) of the UN has found that 35% of global agricultural land, consisting of 87 major food crops, is dependent on pollination by bees
+“Honey production is cyclical,'' Wijesinghe explained., “And we operate in different parts of the country, depending on the season.” From February to March, they operate bee boxes in the low-country wet-zone—in areas like Kegalle and Ratnapura—with the bees feeding on rubber. From July to August, they move to the up-country, to Bandarawela, Haputale and Welimada, where the bees feed on eucalyptus. The dry zone is suitable for bee cultivation throughout the year, with the bees feeding on the blossoms of medicinal plants such as Nelli, Aralu and Mee, which is what makes this variety of honey so suitable for medicinal purposes.
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks.
 

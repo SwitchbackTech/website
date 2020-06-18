@@ -1,18 +1,17 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
-date: "2020-02-20 05:00:00"
+title: 'Truth pain and to further provide soothing experience'
+date: "2020-02-21 09:00:00"
 author: 'Faima Lima'
 format: 'image'
-image: '../images/blog-1.jpg'
-category: technology
+image: '../images/blog-7.jpg'
+category: themeforest
 tags: 
     - react
-    - gatsby
-    - styled components
-is_featured: true
+    - markdown
+    - gatsby blog
 ---
 
-One primary reason is that bees are vital pollinators, on which human agriculture depends. Bees transfer pollen between plants allowing them to reproduce and grow. The Food and Agriculture Organisation (FAO) of the UN has found that 35% of global agricultural land, consisting of 87 major food crops, is dependent on pollination by bees
+Wijesinghe explained to Roar Media, that beekeeping involves two steps: firstly, setting up an incubating hive, into which either a queen bee is introduced or it is left empty to be discovered by bees. Within weeks the bees build a hive full of honeycomb, with larvae and an egg-laying queen. This incubating hive is then transferred into a panelled beebox, by carefully slicing the honey comb and attaching each slice to a single panel. The bees then continue to expand their hive in the beebox, from which honey can be extracted more easily. 
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks.
 

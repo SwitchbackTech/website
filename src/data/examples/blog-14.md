@@ -1,18 +1,17 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
-date: "2020-02-20 05:00:00"
+title: 'Gallery Format Blog Title'
+date: "2020-02-21 11:00:00"
 author: 'Faima Lima'
-format: 'image'
-image: '../images/blog-1.jpg'
-category: technology
+format: 'gallery'
+images: ['../images/blog-6.jpg', '../images/blog-8.jpg', '../images/blog-2.jpg']
+category: themeforest
 tags: 
     - react
-    - gatsby
-    - styled components
-is_featured: true
+    - markdown
+    - gatsby blog
 ---
 
-One primary reason is that bees are vital pollinators, on which human agriculture depends. Bees transfer pollen between plants allowing them to reproduce and grow. The Food and Agriculture Organisation (FAO) of the UN has found that 35% of global agricultural land, consisting of 87 major food crops, is dependent on pollination by bees
+As a result, the availability of diverse fresh produce would decline substantially, and human nutrition would likely suffer. Additionally, many animals which feed on bees, would lose their prey in the event of a die-off, threatening the precarious food chains of the natural ecosystem. 
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend toitrrepeat predefined chunks.
 
