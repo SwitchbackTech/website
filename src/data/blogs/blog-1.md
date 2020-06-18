@@ -1,7 +1,7 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part I: Reputation'
-date: "2020-02-20 05:00:00"
-author: 'Faima Lima'
+title: 'How To Pick A Good Software Developer (without knowing how to code) - Part I: Reputation'
+date: "2020-06-25 08:00:00"
+author: 'Ty Hitzeman'
 format: 'image'
 image: '../images/blog-1.jpg'
 category: technology
