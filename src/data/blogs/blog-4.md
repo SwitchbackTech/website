@@ -4,11 +4,9 @@ date: "2020-02-20 09:00:00"
 author: 'Faima Lima'
 format: 'image'
 image: '../images/blog-4.jpg'
-category: graphics
+category: hiring
 tags: 
-    - react
-    - markdown
-    - gatsby blog
+    - non-technical
 is_featured: true
 ---
 
