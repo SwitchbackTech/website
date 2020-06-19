@@ -1,7 +1,7 @@
 # Development Guide
 
 ## Running the app locally
-  Navigate into your new site’s directory and start it up.
+ Navigate into your new site’s directory and start it up.
 
     ```shell 
     cd website
