@@ -2,8 +2,8 @@
 title: 'How To Hire A Good Software Developer (without knowing how to code) - Part I: Reputation'
 date: "2020-06-25 08:00:00"
 author: 'Ty Hitzeman'
-format: 'image'
-image: '../images/reputation.png'
+format: 'gallery'
+images: ['../images/reputation.png', '../images/github-good.png', '../images/github-bad.png', '../images/stackoverflow-bad.png', '../images/stackoverflow-good.png']
 category: hiring
 tags: 
     - non-technical
