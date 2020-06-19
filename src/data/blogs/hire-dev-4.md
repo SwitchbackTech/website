@@ -1,5 +1,5 @@
 ---
-title: 'How To Hire A Good Software Developer (without knowing how to code) - Part IV: Communication'
+title: 'How To Hire A Good Software Developer (without knowing how to code) - Communication'
 date: "2020-06-28 08:00:00"
 author: 'Ty Hitzeman'
 format: 'image'

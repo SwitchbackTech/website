@@ -1,5 +1,5 @@
 ---
-title: 'How To Hire A Good Software Developer (without knowing how to code) - Part II: Prioritization Skills'
+title: 'How To Hire A Good Software Developer (without knowing how to code) - Prioritization Skills'
 date: "2020-06-26 08:00:00"
 author: 'Ty Hitzeman'
 format: 'image'

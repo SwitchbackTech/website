@@ -1,5 +1,5 @@
 ---
-title: 'How To Pick A Good Software Developer (without knowing how to code yourself) - Part III: Empathy'
+title: 'How To Pick A Good Software Developer (without knowing how to code) - Empathy'
 date: "2020-06-27 08:00:00"
 author: 'Ty Hitzeman'
 format: 'quote'

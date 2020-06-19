@@ -1,5 +1,5 @@
 ---
-title: 'How To Hire A Good Software Developer (without knowing how to code) - Part I: Reputation'
+title: 'How To Hire A Good Software Developer (without knowing how to code) - Reputation'
 date: "2020-06-25 08:00:00"
 author: 'Ty Hitzeman'
 format: 'gallery'

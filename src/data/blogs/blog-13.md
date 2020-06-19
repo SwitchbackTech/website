@@ -73,7 +73,7 @@ ___
 
 `<!-- Inline Code Block -->`
 
-`<p> This is paragraph </p>`
+`<p> This is paragraph </p>` text next to code
 
 
 `<!-- Images -->`
