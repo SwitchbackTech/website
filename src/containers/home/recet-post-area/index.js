@@ -71,7 +71,7 @@ const RecentPostArea = (props) => {
                                 disabled={!hasMore} 
                                 onClick={loadMoreHandler} 
                                 {...loadMoreBtn} 
-                                icon={<FiLoader/>}>Load More Article</Button>
+                                icon={<FiLoader/>}>Load More</Button>
                         </LoadMoreBtnWrap>
                     )}
                     {!hasMore && <p>That's all, folks!</p>}
