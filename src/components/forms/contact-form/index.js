@@ -46,7 +46,7 @@ const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
             data
         })
             .then(res => {
-                handleServerResponse(true, "Your message was submitted. We'll be in touch soon!", form);
+                handleServerResponse(true, "Booyah! Your message was submitted.", form);
             })
             .catch(err => {
                 handleServerResponse(false, err.response.data.error, form);
