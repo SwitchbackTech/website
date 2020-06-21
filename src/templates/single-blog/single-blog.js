@@ -125,14 +125,12 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                     <RecentPostWidget />
                                     <InstagramWidget />
                                     <CategoryWidget />
-                                    <CTAWidget />
                                     <SubscribeWidget />
                                 </SidebarWrap>
                             </Col>
                         </Row>
                     </Container>
                 </SinglePostArea>
-                <InstagramArea />
             </div>
             <Footer />
             <ModalVideo
