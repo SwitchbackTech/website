@@ -4,6 +4,8 @@ date: "2020-06-25 08:00:00"
 author: 'Ty Hitzeman'
 format: 'gallery'
 images: ['../images/reputation.png', '../images/github-good.png', '../images/github-bad.png', '../images/stackoverflow-bad.png', '../images/stackoverflow-good.png']
+video_link: 'dummy video link to avoid query error for required field. can remove once another post uses this'
+link: 'dummy link to avoid query error for required field. can remove once another post uses this'
 category: hiring
 tags: 
     - non-technical
