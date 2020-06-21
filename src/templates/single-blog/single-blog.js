@@ -14,9 +14,7 @@ import RecentPostWidget from '../../containers/widgets/recent-post'
 import InstagramWidget from '../../containers/widgets/instagram'
 import CategoryWidget from '../../containers/widgets/categories'
 import AuthorWidget from '../../containers/widgets/author'
-import CTAWidget from '../../containers/widgets/cta'
 import SubscribeWidget from '../../containers/widgets/subscribe'
-import InstagramArea from '../../containers/global/instagram'
 import Comment from '../../containers/global/comment'
 import RelatedPosts from '../../containers/global/related-posts'
 import SocialShare from '../../components/socials/social-share'
@@ -125,14 +123,12 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                     <RecentPostWidget />
                                     <InstagramWidget />
                                     <CategoryWidget />
-                                    <CTAWidget />
                                     <SubscribeWidget />
                                 </SidebarWrap>
                             </Col>
                         </Row>
                     </Container>
                 </SinglePostArea>
-                <InstagramArea />
             </div>
             <Footer />
             <ModalVideo
@@ -193,11 +189,8 @@ export const postQuery = graphql`
                         }
                     }
                     social {
-                        facebook
-                        instagram
                         linkedin
-                        twitter
-                        youtube
+                        github
                     }
                 }
             }

@@ -14,8 +14,8 @@ module.exports = {
         facebook: 'https://facebook.com',
         twitter: 'https://twitter.com',
         instagram: 'https://instagram.com/switchback.tech',
-        linkedin: 'https://linkedin.com',
-        youtube: 'https://youtube.com',
+        linkedin: 'http://linkedin.com/company/switchbacktech',
+        youtube: 'https://www.youtube.com/channel/UCyB1I3yUNkIea2Wh7WaEioA',
       }
     }
   },

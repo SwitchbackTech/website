@@ -1,18 +1,10 @@
 [
-    {
-        "title": "home",
-        "path": "/"
-    },
-    {
-        "title": "The Best Stuff",
-        "path": "#feature-post"
-    },
-    {
-        "title": "about",
-        "path": "/about"
-    },
-    {
-        "title": "contact",
-        "path": "/contact-us"
-    }
+  {
+    "title": "home",
+    "path": "/"
+  },
+  {
+    "title": "about",
+    "path": "/about"
+  }
 ]

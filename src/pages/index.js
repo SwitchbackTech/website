@@ -5,7 +5,6 @@ import Header from '../containers/layout/header'
 import Footer from '../containers/layout/footer'
 import HeroArea from '../containers/home/hero-area'
 import MainArea from '../containers/home/main-area'
-import InstagramArea from '../containers/global/instagram'
 
 const IndexPage = () => (
   <Layout>
@@ -14,7 +13,6 @@ const IndexPage = () => (
     <div className="main-content">
       <HeroArea/>
       <MainArea/>  
-      <InstagramArea/>   
     </div>
     <Footer/>
   </Layout>
