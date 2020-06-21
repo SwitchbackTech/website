@@ -41,7 +41,7 @@ const Mailchimp = ({ status = undefined, message, onValidated }) => {
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}
-        {(error && !status) && <div style={{color: 'red'}}>Please, Write a valid email</div>}
+        {(error && !status) && <div style={{color: 'red'}}>Opps, that's not a valid email</div>}
         {(status === "success" && !error) && (
           <div
             style={{ color: "green" }}
