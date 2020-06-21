@@ -1,9 +1,7 @@
 import React from "react";
 import {
-  FiFacebook,
   FiInstagram,
   FiLinkedin,
-  FiTwitter,
   FiYoutube,
 } from "react-icons/fi";
 import Social, { SocialLink } from "../../shared/social";

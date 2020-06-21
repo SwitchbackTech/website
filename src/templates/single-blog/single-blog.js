@@ -15,7 +15,6 @@ import InstagramWidget from '../../containers/widgets/instagram'
 import CategoryWidget from '../../containers/widgets/categories'
 import AuthorWidget from '../../containers/widgets/author'
 import SubscribeWidget from '../../containers/widgets/subscribe'
-import InstagramArea from '../../containers/global/instagram'
 import Comment from '../../containers/global/comment'
 import RelatedPosts from '../../containers/global/related-posts'
 import SocialShare from '../../components/socials/social-share'
@@ -190,7 +189,6 @@ export const postQuery = graphql`
                         }
                     }
                     social {
-                        instagram
                         linkedin
                         twitter
                         youtube
