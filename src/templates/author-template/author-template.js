@@ -238,7 +238,6 @@ export const query = graphql `
             tagline
             bio
             social {
-                facebook
                 instagram
                 linkedin
                 twitter

@@ -18,7 +18,6 @@ const AuthorOffcanvas = ({ isOpen, onClick, ...restProps }) => {
                         bio
                         tagline
                         social {
-                            facebook
                             instagram
                             linkedin
                             twitter

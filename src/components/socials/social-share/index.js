@@ -1,6 +1,6 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
-import { FiFacebook, FiLinkedin, FiTwitter } from "react-icons/fi";
+import {FiLinkedin, FiTwitter } from "react-icons/fi";
 import Social, {SocialLink} from '../../shared/social'
 
 const SocialShare = ({title, slug, ...restProps}) => {
@@ -17,9 +17,6 @@ const SocialShare = ({title, slug, ...restProps}) => {
     
     return (
         <Social {...restProps}>
-            <SocialLink path={`http://www.facebook.com/sharer.php?u=${siteUrl}${slug}`}>
-                <FiFacebook/>
-            </SocialLink>
             <SocialLink path={`http://www.linkedin.com/shareArticle?mini=true&url=${siteUrl}${slug}&title=${title}&source=${siteUrl}`}>
                 <FiLinkedin/>
             </SocialLink>

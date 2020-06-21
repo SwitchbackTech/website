@@ -190,7 +190,6 @@ export const postQuery = graphql`
                         }
                     }
                     social {
-                        facebook
                         instagram
                         linkedin
                         twitter

@@ -21,7 +21,6 @@ const Footer = (props) => {
         siteMetadata {
           contact {
             social {
-              facebook
               instagram
               linkedin
               twitter
