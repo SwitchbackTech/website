@@ -20,7 +20,6 @@ const AuthorOffcanvas = ({ isOpen, onClick, ...restProps }) => {
                         social {
                             instagram
                             linkedin
-                            youtube
                         }
                         image {
                             childImageSharp {

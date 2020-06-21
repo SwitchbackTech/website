@@ -241,7 +241,6 @@ export const query = graphql `
                 instagram
                 linkedin
                 twitter
-                youtube
             }
             image {
                 childImageSharp {

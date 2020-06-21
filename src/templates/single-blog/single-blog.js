@@ -191,7 +191,6 @@ export const postQuery = graphql`
                     social {
                         linkedin
                         twitter
-                        youtube
                     }
                 }
             }
