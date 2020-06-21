@@ -9,7 +9,7 @@ import {
 import Social, { SocialLink } from "../../shared/social";
 
 const SocialOne = ({ social, ...restProps }) => {
-  const { instagram, linkedin, twitter, youtube } = social;
+  const { instagram, linkedin, youtube } = social;
   return (
     <Social {...restProps}>
       {instagram && (
@@ -20,11 +20,6 @@ const SocialOne = ({ social, ...restProps }) => {
       {linkedin && (
         <SocialLink path={linkedin}>
           <FiLinkedin />
-        </SocialLink>
-      )}
-      {twitter && (
-        <SocialLink path={twitter}>
-          <FiTwitter />
         </SocialLink>
       )}
       {youtube && (
