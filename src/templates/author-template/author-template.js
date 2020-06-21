@@ -238,9 +238,7 @@ export const query = graphql `
             tagline
             bio
             social {
-                instagram
                 linkedin
-                twitter
             }
             image {
                 childImageSharp {
