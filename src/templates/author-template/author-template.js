@@ -239,6 +239,7 @@ export const query = graphql `
             bio
             social {
                 linkedin
+                github
             }
             image {
                 childImageSharp {

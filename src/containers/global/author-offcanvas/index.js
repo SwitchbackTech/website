@@ -19,6 +19,7 @@ const AuthorOffcanvas = ({ isOpen, onClick, ...restProps }) => {
                         tagline
                         social {
                             linkedin
+                            github
                         }
                         image {
                             childImageSharp {

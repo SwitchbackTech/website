@@ -1,13 +1,9 @@
 import React from "react";
-import {
-  FiInstagram,
-  FiLinkedin,
-  FiYoutube,
-} from "react-icons/fi";
+import { FiInstagram, FiLinkedin, FiYoutube, FiGithub } from "react-icons/fi";
 import Social, { SocialLink } from "../../shared/social";
 
 const SocialOne = ({ social, ...restProps }) => {
-  const { instagram, linkedin, youtube } = social;
+  const { instagram, linkedin, github, youtube } = social;
   return (
     <Social {...restProps}>
       {instagram && (
@@ -23,6 +19,11 @@ const SocialOne = ({ social, ...restProps }) => {
       {youtube && (
         <SocialLink path={youtube}>
           <FiYoutube />
+        </SocialLink>
+      )}
+      {github && (
+        <SocialLink path={github}>
+          <FiGithub />
         </SocialLink>
       )}
     </Social>
