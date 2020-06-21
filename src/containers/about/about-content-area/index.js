@@ -16,14 +16,6 @@ const AboutContentArea = (props) => {
                         text2
                     }
                 }
-                list_left {
-                    heading
-                    items
-                }
-                list_right {
-                    heading
-                    items
-                }
                 bottom_content {
                     heading
                     content {

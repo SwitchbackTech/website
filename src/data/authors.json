@@ -1,7 +1,7 @@
 [
     {
         "name": "Ty Hitzeman",
-        "image": "./images/author-1.jpg",
+        "image": "./images/ty.png",
         "social": {
             "facebook": "https://facebook.com",
             "twitter": "https://twitter.com",
@@ -9,7 +9,7 @@
             "linkedin": "https://linkedin.com",
             "youtube": "https://youtube.com"
         },
-        "tagline": "Da boss",
-        "bio": "I like eggs"
+        "tagline": "Founder & Lead Developer",
+        "bio": "I'm a Full-Stack Developer creates modern, scalabe web apps for businesses. I specialize in Python (Flask, Django) and JavaScript (React, Node). When not writing kickass code, I rock climb and listen to economics podcasts."
     }
 ]

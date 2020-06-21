@@ -6,7 +6,6 @@ import Footer from '../containers/layout/footer'
 import AboutTitleArea from '../containers/about/about-title-area'
 import AboutBannerArea from '../containers/about/about-banner-area'
 import AboutContentArea from '../containers/about/about-content-area'
-import InstagramWrap from '../containers/global/instagram'
 
 const AboutPage = () => (
   <Layout>
@@ -14,9 +13,8 @@ const AboutPage = () => (
     <Header/>
     <div className="main-content">
         <AboutTitleArea/>
-        <AboutBannerArea/>
         <AboutContentArea/>
-        <InstagramWrap/>
+        <AboutBannerArea/>
     </div>
     <Footer/>
   </Layout>

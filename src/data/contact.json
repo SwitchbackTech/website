@@ -2,7 +2,7 @@
     {
         "id": "contact-page-header",
         "title": "Contact",
-        "tagline": "Hit us up"
+        "tagline": ""
     },
     {
         "id": "contact-page-banner",
@@ -10,6 +10,6 @@
     },
     {
         "id": "contact-page-content",
-        "title": "SEND US A MESSAGE"
+        "title": "get in touch"
     }
 ]
