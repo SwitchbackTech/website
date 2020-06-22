@@ -1,6 +1,6 @@
 import React from 'react'
 import WidgetBox, {WidgetTitle} from '../../../components/shared/widget-box'
-import Mailchimp from '../../../components/forms/mailchimp-two'
+import Mailchimp from '../../../components/forms/mailchimp'
 import {FormWrapper, SubscribeText} from './subscribe.stc'
 
 const SearchWidget = ({widgetStyle, widgetTitleStyle, inputStyle}) => {

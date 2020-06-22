@@ -5,7 +5,7 @@ import MailchimpForm from './form'
 
 const Mailchimp = () => {
     const mailchimpData = useStaticQuery(graphql `
-        query MailchimpQuery {
+        query MailchimpTwoQuery {
             site {
                 siteMetadata {
                     mailchimp_endpoint
