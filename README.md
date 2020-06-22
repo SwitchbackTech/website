@@ -16,7 +16,7 @@
 
    Update file and watch the browser update in real time!
 
-2. See `index.html` in `/docs` for further info
+2. See `index.html` in `/docs` for further info 
 
 ## Deployment
 See [Gatsby's Guide to Deploying to Firebase](https://www.gatsbyjs.org/docs/deploying-to-firebase)
