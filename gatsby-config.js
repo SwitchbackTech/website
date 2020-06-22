@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Fatima`,
-    titleTemplate: `Creative React Gatsby Blog Template`,
-    description: `Kick off your next, great blogging website with this Gatsby template. This template ships with the main Gatsby configuration files you might need.`,
+    title: `Switchback`,
+    titleTemplate: `Epic Software`,
+    description: `Switchback's blog`,
     author: `@gatsbyjs`,
     image: 'banner.jpg',
     siteUrl: "http://localhost:8000/",
