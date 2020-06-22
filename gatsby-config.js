@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Switchback`,
     titleTemplate: `Epic Software`,
-    description: `Switchback's blog`,
-    author: `@gatsbyjs`,
+    description: `Switchback's Blog`,
+    author: `Ty Hitzeman`,
     image: 'banner.jpg',
     siteUrl: "http://localhost:8000/",
     mailchimp_endpoint: "https://tech.us18.list-manage.com/subscribe/post?u=cf05d1d7d6f957a5f11cea628&amp;id=b6b72a31e0",
