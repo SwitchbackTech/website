@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import { FiArrowRight } from "react-icons/fi";
 import Button from '../../../shared/button'
-import {MailchimpWrap, SubmitBtn} from './mailchimp.stc'
+import {MailchimpWrap, MailchimpInner, SubmitBtn} from './mailchimp.stc'
 
-const Mailchimp = ({ status = undefined, message, onValidated }) => {
+const Mailchimp = ({ status, message, onValidated }) => {
     const [error, setError] = useState(false)
     let email;
     const submit = () => {
@@ -26,22 +26,24 @@ const Mailchimp = ({ status = undefined, message, onValidated }) => {
 
     return (
       <MailchimpWrap>
-        <input
-          ref={node => (email = node)}
-          type="email"
-          placeholder="Your email"
-        />
-        <SubmitBtn>
-            <Button onClick={submit} varient="iconButton"><FiArrowRight/></Button>
-        </SubmitBtn>
-        {(status === "sending" && !error) && <div style={{ color: "blue" }}>sending...</div>}
+        <MailchimpInner>
+          <input
+            ref={node => (email = node)}
+            type="email"
+            placeholder="Enter Your Email"
+          />
+          <SubmitBtn> 
+              <Button onClick={submit} varient="iconButton" color="#63696a"><FiArrowRight/></Button>
+          </SubmitBtn>
+        </MailchimpInner>
+        {(status === "sending" && !error) && <div style={{ color: "blue" }}>Sending...</div>}
         {(status === "error" && !error) && (
           <div
             style={{ color: "red" }}
             dangerouslySetInnerHTML={{ __html: message }}
           />
         )}
-        {(error && !status) && <div style={{color: 'red'}}>Opps, that's not a valid email</div>}
+        {(error && !status) && <div style={{color: 'red'}}>Oops, that email is not legit. Typo?</div>}
         {(status === "success" && !error) && (
           <div
             style={{ color: "green" }}
@@ -50,6 +52,6 @@ const Mailchimp = ({ status = undefined, message, onValidated }) => {
         )}
       </MailchimpWrap>
     );
-};
+}; 
 
 export default Mailchimp
