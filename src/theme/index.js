@@ -1,13 +1,13 @@
 const theme = {
     colors: {
-        themeColor: '#ffd2d1',
+        themeColor: '#275767',
         textColor: '#090606',
         headingColor: '#090606',
         borderColor: '#e3e7e8b3',
         secondaryColor: "#0e1b47",
-        hoverColor: "#f8777c",
-        hoverColorTwo: "#ff4d4d",
-        appricot: '#eb7e84',
+        hoverColor: "#1a718d",
+        hoverColorTwo: "#5c8292",
+        appricot: '#809fad',
         shark: '#929496',
         gray: '#888c8e',
         silver: '#ababab',
