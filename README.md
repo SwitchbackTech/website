@@ -35,4 +35,5 @@ https://website-888.web.app/about
 
 
 # Resources
-Original template: [Fatima](https://themeforest.net/item/fatima-creative-react-gatsby-blog-template/26418684) (Themeforest)
+Original template: [Fatima, Themeforest](https://themeforest.net/item/fatima-creative-react-gatsby-blog-template/26418684)
+See `/template` for compressed version of original source

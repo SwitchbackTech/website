@@ -91,8 +91,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fatima`,
-        short_name: `Fatima`,
+        name: `Test`,
+        short_name: `Test Shortname`,
         start_url: `/`,
         background_color: `#333333`,
         theme_color: `#ffd2d1`,
