@@ -156,7 +156,7 @@ ContactForm.defaultProps = {
         btnsize: 'fullwidth',
         varient: 'contained',
         shape: 'rounded',
-        bg: '#f8777c',
+        bg: '#688ca4',
         fontSize: '13px',
         letterSpacing: '1px',
         iconcss: {

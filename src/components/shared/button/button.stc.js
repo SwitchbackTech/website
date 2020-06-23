@@ -50,10 +50,10 @@ const ButtonStyled = css(
         prop: 'varient',
         variants: {
             contained: {
-                backgroundColor: '#f8777c',
+                backgroundColor: '#688ca4',
                 textTransform: 'uppercase',
                 border: `1px solid`,
-                borderColor: '#f8777c',
+                borderColor: '#688ca4',
                 color: '#fff'
             },
             outlined: {
