@@ -16,7 +16,7 @@
 
    Update file and watch the browser update in real time!
 
-2. See `index.html` in `/docs` for further info
+2. See `index.html` in `/docs` for further info 
 
 ## Deployment
 See [Gatsby's Guide to Deploying to Firebase](https://www.gatsbyjs.org/docs/deploying-to-firebase)
@@ -35,4 +35,5 @@ https://website-888.web.app/about
 
 
 # Resources
-Original template: [Fatima](https://themeforest.net/item/fatima-creative-react-gatsby-blog-template/26418684) (Themeforest)
+Original template: [Fatima, Themeforest](https://themeforest.net/item/fatima-creative-react-gatsby-blog-template/26418684)
+See `/template` for compressed version of original source
