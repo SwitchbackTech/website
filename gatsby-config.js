@@ -7,7 +7,7 @@ module.exports = {
     image: 'banner.jpg',
     siteUrl: "http://localhost:8000/",
     mailchimp_endpoint: "https://tech.us18.list-manage.com/subscribe/post?u=cf05d1d7d6f957a5f11cea628&amp;id=b6b72a31e0",
-    disqus_shortname: "thern-1",
+    disqus_shortname: "switchback",
     getform_url: "https://getform.io/f/7a6695a7-c8e3-442c-bc2f-d46d3b9a535e",
     contact: {
       social: {
