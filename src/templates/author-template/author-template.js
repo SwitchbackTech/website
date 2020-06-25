@@ -11,7 +11,6 @@ import Heading from '../../components/shared/heading'
 import Text from '../../components/shared/text'
 import Social from '../../components/socials/layout-two'
 import Blog from '../../components/blog/layout-two'
-import InstagramArea from '../../containers/global/instagram'
 import Button from '../../components/shared/button'
 import {AuthorSection, AuthorImg, AuthorInfo, AuthorBlogs, LoadMoreBtnWrap} from './author-template.stc'
 
@@ -123,7 +122,6 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
                         </Row>
                     </Container>
                 </AuthorBlogs>
-                <InstagramArea/>
             </div>
             <Footer/>
         </Layout>

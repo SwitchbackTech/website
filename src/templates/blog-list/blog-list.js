@@ -8,7 +8,6 @@ import Header from '../../containers/layout/header'
 import Footer from '../../containers/layout/footer'
 import HeroArea from '../../containers/home/hero-area'
 import Siderbar from '../../containers/global/sidebar'
-import InstagramArea from '../../containers/global/instagram'
 import SectionTitle from '../../components/shared/section-title'
 import Blog from '../../components/blog/layout-two'
 import Pagination from '../../components/pagination'
@@ -59,7 +58,6 @@ const BlogList = ({ data, pageContext, location, ...restProps }) => {
                         </Row>
                     </Container>
                 </MainWrapper>   
-                <InstagramArea/>     
             </div>
             <Footer/>
         </Layout> 
