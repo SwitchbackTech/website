@@ -1,6 +1,7 @@
 const path = require(`path`)
 const { slugify } = require('./src/utils/utilFunctions')
 const _ = require('lodash')
+const prefix = "/blog"
 
 exports.onCreateNode = ({ node, actions }) => {
     const { createNodeField } = actions;
@@ -98,7 +99,7 @@ exports.createPages = async ({ graphql, actions }) => {
         const currentPage = index + 1;
         if (isFirstPage) return;
         createPage({
-            path: `page/${currentPage}`,
+            path: `${prefix}page/${currentPage}`,
             component: blogList,
             context: {
                 limit: postsPerPage,
@@ -121,7 +122,7 @@ exports.createPages = async ({ graphql, actions }) => {
     tags = _.uniq(tags)
     tags.forEach(tag => {
         createPage({
-            path: `/tag/${slugify(tag)}`,
+            path: `${prefix}/tag/${slugify(tag)}`,
             component: tagPage,
             context: {
                 tag
@@ -141,7 +142,7 @@ exports.createPages = async ({ graphql, actions }) => {
     categories = _.uniq(categories)
     categories.forEach(category => {
         createPage({
-            path: `/category/${slugify(category)}`,
+            path: `${prefix}/category/${slugify(category)}`,
             component: categoryPage,
             context: {
                 category
@@ -161,7 +162,7 @@ exports.createPages = async ({ graphql, actions }) => {
     authors = _.uniq(authors)
     authors.forEach(author => {
         createPage({
-            path: `/author/${author}`,
+            path: `${prefix}/author/${author}`,
             component: authorPage,
             context: {
                 author
@@ -184,7 +185,7 @@ exports.createPages = async ({ graphql, actions }) => {
     dateSlugs = _.uniq(dateSlugs)
     dateSlugs.forEach((dateSlug, i) => {
         createPage({
-            path: `/date/${dateSlug}`,
+            path: `${prefix}/date/${dateSlug}`,
             component: datePage,
             context: {
                 date: dates[i],
@@ -195,7 +196,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Create Search Page
     createPage({
-        path: '/blog/search',
+        path: `${prefix}/search`,
         component: searchPage,
     })
 }
