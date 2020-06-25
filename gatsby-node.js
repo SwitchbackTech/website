@@ -195,7 +195,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     // Create Search Page
     createPage({
-        path: '/search',
+        path: '/blog/search',
         component: searchPage,
     })
 }
