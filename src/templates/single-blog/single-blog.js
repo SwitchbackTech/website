@@ -38,6 +38,13 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
         video_link, quote_text, quote_author,
         link, images, author, tags
     } = data.markdownRemark.frontmatter;
+
+    const datePath = 'date/' + dateSlug;
+    const categoryPath = 'category/' + category;
+    const authorPath = 'author/' + authorId;
+    const thumbnailPath = '/blog/' + slug;  // todo refactor so not reusing blog; try adding to slug call
+
+
     const { html } = data.markdownRemark;
     let video_arr, video_id, video_channel;
     if (video_link) {
@@ -65,7 +72,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                 <SinglePostWrap>
                                     <PostMedia>
                                         {(format === 'image' || format === 'standard') && (
-                                            <Thumbnail path={`/${slug}`} image={image} title={title} />
+                                            <Thumbnail path={`${thumbnailPath}`} image={image} title={title} />
                                         )}
                                         {format === 'video' && (
                                             <Video
@@ -79,17 +86,17 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         {format === 'gallery' && <Gallery images={images} />}
                                     </PostMedia>
                                     <PostHeader>
-                                        {category && <Category slug={`/category/${slugify(category)}`} text={category} />}
+                                        {category && <Category slug={`${slugify(categoryPath)}`} text={category} />}
                                         {title && <PostTitle>{title}</PostTitle>}
                                         <PostMeta>
                                             {date && (
                                                 <BlogMeta>
-                                                    <Link to={`/date/${slugify(dateSlug)}`}>{date}</Link>
+                                                    <Link to={`${slugify(datePath)}`}>{date}</Link>
                                                 </BlogMeta>
                                             )}
                                             {author && (
                                                 <BlogMeta>
-                                                    <Link to={`/author/${slugify(authorId)}`}>{author.name}</Link>
+                                                    <Link to={`${slugify(authorPath)}`}>{author.name}</Link>
                                                 </BlogMeta>
                                             )}
                                             <BlogMeta>
