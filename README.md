@@ -4,7 +4,7 @@
  Navigate into your new site’s directory and start it up.
 
     ```shell 
-    cd website
+    cd website  
     gatsby develop
     ```
 
