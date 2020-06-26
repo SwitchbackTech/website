@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import { FiChevronRight } from "react-icons/fi";
 import Button from '../../shared/button'
-import {slugify} from '../../../utils/utilFunctions'
+import {cleanText} from '../../../utils/utilFunctions'
 import BlogMeta, {Category, CommentNumber} from '../../blog/blog-meta'
 import ModalVideo from '../../shared/modal-video'
 import {Thumbnail, Video, Quote, Linked, Gallery} from '../blog-media'
@@ -61,12 +61,12 @@ const Blog = ({content, ...restProps}) => {
                     </BlogMedia>
                     <BlogContent>
                         <BlogHeader> 
-                            {category && <Category {...categoryStyle} slug={`/category/${slugify(category)}`} text={category}/>}
+                            {category && <Category {...categoryStyle} slug={`/category/${cleanText(category)}`} text={category}/>}
                             {title && <BlogTitle><Link to={`/${slug}`}>{title}</Link></BlogTitle>}
                             <BlogMetaWrap>
                                 {date && (
                                     <BlogMeta>
-                                        <Link to={`/date/${slugify(dateSlug)}`}>{date}</Link>
+                                        <Link to={`/date/${cleanText(dateSlug)}`}>{date}</Link>
                                     </BlogMeta>
                                 )}
                                 <BlogMeta>

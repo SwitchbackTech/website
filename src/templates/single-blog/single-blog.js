@@ -8,7 +8,7 @@ import Footer from '../../containers/layout/footer'
 import BlogMeta, { CommentNumber, Category, Tags } from '../../components/blog/blog-meta'
 import { Thumbnail, Video, Quote, Linked, Gallery } from '../../components/blog/blog-media'
 import ModalVideo from '../../components/shared/modal-video'
-import { slugify } from '../../utils/utilFunctions'
+import {cleanText, inferSlug } from '../../utils/utilFunctions'
 import SearchWidget from '../../containers/widgets/search'
 import RecentPostWidget from '../../containers/widgets/recent-post'
 import InstagramWidget from '../../containers/widgets/instagram'
@@ -32,17 +32,17 @@ import {
 } from './single-blog.stc'
 
 const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
-    const { dateSlug, slug, customSlug, postID, authorId } = data.markdownRemark.fields;
+    const { dateSlug, postID, authorId } = data.markdownRemark.fields;
     const {
         category, date, format, title, image,
         video_link, quote_text, quote_author,
         link, images, author, tags, custom_slug
     } = data.markdownRemark.frontmatter;
 
-    const datePath = 'date/' + dateSlug;
-    const categoryPath = 'blog/category/' + category;
-    const authorPath = 'blog/author/' + authorId;
-    const thumbnailPath = '/blog/' + slug;  // todo refactor so not reusing blog; try adding to slug call
+    const datePath = inferSlug('date/' + dateSlug);
+    const authorPath = inferSlug('author/' + authorId);
+    const categoryPath = inferSlug('category/' + category);
+    const thumbnailPath = cleanText(custom_slug);
 
 
     const { html } = data.markdownRemark;
@@ -91,16 +91,16 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         <PostMeta>
                                             {date && (
                                                 <BlogMeta>
-                                                    <Link to={`${slugify(datePath)}`}>{date}</Link>
+                                                    <Link to={`${inferSlug(datePath)}`}>{date}</Link>
                                                 </BlogMeta>
                                             )}
                                             {author && (
                                                 <BlogMeta>
-                                                    <Link to={authorPath}>{author.name}</Link>
+                                                    <Link to={`${inferSlug(authorPath)}`}>{author.name}</Link>
                                                 </BlogMeta>
                                             )}
                                             <BlogMeta>
-                                                <CommentNumber slug={slug} title={title} id={postID} />
+                                                <CommentNumber slug={custom_slug} title={title} id={postID} />
                                             </BlogMeta>
                                         </PostMeta>
                                     </PostHeader>
@@ -110,7 +110,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                             <h4>Share This:</h4>
                                             <SocialShare
                                                 title={title}
-                                                slug={slug}
+                                                slug={custom_slug}
                                             />
                                         </PostShare>
                                         <PostTags>
@@ -118,8 +118,8 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         </PostTags>
                                     </PostFooter>
                                 </SinglePostWrap>
-                                <Comment slug={slug} title={title} id={postID} />
-                                <RelatedPosts category={category} tags={tags} currentArticleSlug={slug} />
+                                <Comment slug={custom_slug} title={title} id={postID} />
+                                <RelatedPosts category={category} tags={tags} currentArticleSlug={custom_slug} />
                             </Col>
                             <Col lg={4}>
                                 <SidebarWrap>

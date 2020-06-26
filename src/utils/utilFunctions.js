@@ -1,3 +1,12 @@
+const prefix = "/blog";
+
+const getClosest = function(elem, selector) {
+  for (; elem && elem !== document; elem = elem.parentNode) {
+    if (elem.matches(selector)) return elem;
+  }
+  return null;
+};
+
 const getSiblings = function(elem) {
   var siblings = [];
   var sibling = elem.parentNode.firstChild;
@@ -10,27 +19,47 @@ const getSiblings = function(elem) {
   return siblings;
 };
 
-const getClosest = function(elem, selector) {
-  for (; elem && elem !== document; elem = elem.parentNode) {
-    if (elem.matches(selector)) return elem;
+const inferSlug = function(text) {
+  let cleanedText = cleanText(text);
+
+  var addPrefix;
+  text.includes(prefix) ? (addPrefix = false) : (addPrefix = true);
+  if (addPrefix) {
+    return prefix + "/" + cleanedText;
+  } else {
+    return cleanedText;
   }
-  return null;
 };
 
-const slugify = function(text) {
+const cleanText = function(text) {
   if (!text) return;
+
   let cleanedText = text
     .toString()
     .toLowerCase()
     .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/[^\w-]+/g, "") // Remove all non-word chars
+    .replace(/[^\w\/-]+/g, "") // Remove all non-word chars EXCEPT '/'s
+    .replace("//", "/") // Replace '//' with '/'
     .replace(/--+/g, "-") // Replace multiple - with single -
     .replace(/^-+/, "") // Trim - from start of text
     .replace(/-+$/, ""); // Trim - from end of text
-
-  let prefixedText = "/blog/" + cleanedText;
-  return prefixedText;
+  return cleanedText;
 };
+
+//TODO remove once done
+// const cleanText = function(text) {
+//   if (!text) return;
+//   let cleanedText = text
+//     .toString()
+//     .toLowerCase()
+//     .replace(/\s+/g, "-") // Replace spaces with -
+//     .replace(/[^\w-]+/g, "") // Remove all non-word chars
+//     .replace(/--+/g, "-") // Replace multiple - with single -
+//     .replace(/^-+/, "") // Trim - from start of text
+//     .replace(/-+$/, ""); // Trim - from end of text
+
+//   return cleanedText;
+// };
 
 const createList = ({ list, separator = "," }) => {
   if (!list) return;
@@ -76,7 +105,8 @@ const truncateString = (str, num, dots = true) => {
 };
 
 module.exports = {
-  slugify,
+  cleanText,
+  inferSlug,
   getSiblings,
   getClosest,
   createList,
