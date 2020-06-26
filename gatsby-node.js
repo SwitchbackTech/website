@@ -2,21 +2,31 @@ const path = require(`path`);
 const { inferSlug, cleanText, prefix } = require("./src/utils/utilFunctions");
 const _ = require("lodash");
 
+const cleanSlug = function(slug) {
+    if (slug.startsWith('/')) {
+        return slug.substr(1);  // remove prefixed '/'
+    }
+    else {
+        return slug;
+    }
+};
+
+
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === "MarkdownRemark") {
-    const slugFromTitle = inferSlug(node.frontmatter.title);
+    const slug = inferSlug(node.frontmatter.custom_slug);
     const date = node.frontmatter.date;
     const dateSplit = date.split(" ");
     createNodeField({
       node,
       name: "slug",
-      value: slugFromTitle,
+      value: slug,
     });
     createNodeField({
       node,
       name: "postID",
-      value: slugFromTitle + "-" + dateSplit[0],
+      value: slug + "-" + dateSplit[0],
     });
     createNodeField({
       node,
@@ -87,16 +97,13 @@ exports.createPages = async ({ graphql, actions }) => {
   const posts = result.data.allMarkdownRemark.edges;
   posts.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
+      path: inferSlug(node.fields.slug),
       component: singleBlogPage,
       context: {
         slug: node.fields.slug,
       },
     });
   });
-
-  // Create Blog List Page
-  // Pagination
 
   const postsPerPage = 4;
   const numberOfPages = Math.ceil(posts.length / postsPerPage);
@@ -117,8 +124,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create Tags Page
-
+  // Tags Page
   let tags = [];
   _.each(posts, (edge) => {
     if (_.get(edge, "node.frontmatter.tags")) {
@@ -137,8 +143,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create Categories Page
-
+  // Categories Page
   let categories = [];
   _.each(posts, (edge) => {
     if (_.get(edge, "node.frontmatter.category")) {
@@ -157,8 +162,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create Authors Page
-
+  // Authors Page
   let authors = [];
   _.each(posts, (edge) => {
     if (_.get(edge, "node.fields.authorId")) {
@@ -177,8 +181,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create Date Page
-
+  // Date Page
   let dates = [];
   let dateSlugs = [];
   _.each(posts, (edge) => {
@@ -201,7 +204,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Create Search Page
+  // Search Page
   createPage({
     path: `${prefix}/search`,
     component: searchPage,
