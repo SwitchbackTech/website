@@ -1,6 +1,8 @@
 const path = require(`path`);
-const { inferSlug, cleanText, prefix } = require("./src/utils/utilFunctions");
+const { inferSlug, cleanText} = require("./src/utils/utilFunctions");
 const _ = require("lodash");
+
+const prefix = "/blog"
 
 const cleanSlug = function(slug) {
     if (slug.startsWith('/')) {
