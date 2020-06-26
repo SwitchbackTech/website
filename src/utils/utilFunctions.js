@@ -19,7 +19,7 @@ const getClosest = function(elem, selector) {
 
 const slugify = function(text) {
   if (!text) return;
-  text
+  let cleanedText = text
     .toString()
     .toLowerCase()
     .replace(/\s+/g, "-") // Replace spaces with -
@@ -28,7 +28,7 @@ const slugify = function(text) {
     .replace(/^-+/, "") // Trim - from start of text
     .replace(/-+$/, ""); // Trim - from end of text
 
-  let prefixedText = "/blog/" + text;
+  let prefixedText = "/blog/" + cleanedText;
   return prefixedText;
 };
 

@@ -32,16 +32,16 @@ import {
 } from './single-blog.stc'
 
 const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
-    const { dateSlug, slug, postID, authorId } = data.markdownRemark.fields;
+    const { dateSlug, slug, customSlug, postID, authorId } = data.markdownRemark.fields;
     const {
         category, date, format, title, image,
         video_link, quote_text, quote_author,
-        link, images, author, tags
+        link, images, author, tags, custom_slug
     } = data.markdownRemark.frontmatter;
 
     const datePath = 'date/' + dateSlug;
-    const categoryPath = 'category/' + category;
-    const authorPath = 'author/' + authorId;
+    const categoryPath = 'blog/category/' + category;
+    const authorPath = 'blog/author/' + authorId;
     const thumbnailPath = '/blog/' + slug;  // todo refactor so not reusing blog; try adding to slug call
 
 
@@ -86,7 +86,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         {format === 'gallery' && <Gallery images={images} />}
                                     </PostMedia>
                                     <PostHeader>
-                                        {category && <Category slug={`${slugify(categoryPath)}`} text={category} />}
+                                        {category && <Category slug={categoryPath} text={category} />}
                                         {title && <PostTitle>{title}</PostTitle>}
                                         <PostMeta>
                                             {date && (
@@ -96,7 +96,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                             )}
                                             {author && (
                                                 <BlogMeta>
-                                                    <Link to={`${slugify(authorPath)}`}>{author.name}</Link>
+                                                    <Link to={authorPath}>{author.name}</Link>
                                                 </BlogMeta>
                                             )}
                                             <BlogMeta>
@@ -167,6 +167,7 @@ export const postQuery = graphql`
                 quote_text
                 quote_author
                 link
+                custom_slug
                 image {
                   childImageSharp {
                     fluid(maxWidth: 839, maxHeight: 455, quality: 100, srcSetBreakpoints: 6) {

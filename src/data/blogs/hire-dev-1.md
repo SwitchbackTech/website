@@ -10,6 +10,7 @@ category: hiring
 tags: 
     - non-technical
 is_featured: true
+custom_slug: '/hire-dev-reputation'
 ---
 
 You can confidently hire a software developer without knowing anything about code yourself. The easiest way to do so is by assessing the developer’s public reputation. Here’s how to find and apply that information.

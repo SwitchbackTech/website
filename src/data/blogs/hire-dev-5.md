@@ -8,6 +8,7 @@ category: hiring
 tags: 
     - non-technical
 is_featured: true
+custom_slug: '/hire-dev-best-practices'
 ---
 
 There are coding best practices that apply to all software projects. Finding out if a developer follows these practices is a decent way to evaluate their work quality without having to know how to code. Browse your dev's GitHub portfolio and find a project that she has released to users (not a little pet project). Then look for these quality clues:
