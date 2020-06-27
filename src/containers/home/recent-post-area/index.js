@@ -31,7 +31,7 @@ const RecentPostArea = (props) => {
 
     const hasMoreToLoad = () => {
         const blogsToLoad = allBlogs.length - currentShow;
-        setHasMore(blogsToLoad === 0 ? false : true)
+        setHasMore(blogsToLoad <= 0 ? false : true)
     }
     const {blogStyle, loadMoreBtn} = props;
     return (
