@@ -94,8 +94,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  // Create Single Blog Page
-
+  // Single Blog Pages
   const posts = result.data.allMarkdownRemark.edges;
   posts.forEach(({ node }) => {
     createPage({
@@ -107,6 +106,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
+  // Numbered Pages
   const postsPerPage = 4;
   const numberOfPages = Math.ceil(posts.length / postsPerPage);
 
@@ -126,7 +126,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Tags Page
+  // Tags Pages
   let tags = [];
   _.each(posts, (edge) => {
     if (_.get(edge, "node.frontmatter.tags")) {
@@ -183,7 +183,7 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // Date Page
+  // Date Pages
   let dates = [];
   let dateSlugs = [];
   _.each(posts, (edge) => {

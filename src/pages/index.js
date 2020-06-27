@@ -8,13 +8,14 @@ import MainArea from '../containers/home/main-area'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+  <h1>Nothin to see here</h1>
+    {/* <SEO title="Home" />
     <Header/>
     <div className="main-content">
       <HeroArea/>
       <MainArea/>  
     </div>
-    <Footer/>
+    <Footer/> */}
   </Layout>
 )
 
