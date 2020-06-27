@@ -12,6 +12,11 @@ const cleanText = function(text) {
     .replace(/--+/g, "-") // Replace multiple - with single -
     .replace(/^-+/, "") // Trim - from start of text
     .replace(/-+$/, ""); // Trim - from end of text
+
+  if (cleanedText.startsWith("/")) {
+    cleanedText = cleanedText.substr(1); // remove prefixed '/'
+  }
+
   return cleanedText;
 };
 

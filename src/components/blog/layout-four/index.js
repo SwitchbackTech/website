@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import { FiChevronRight } from "react-icons/fi";
 import Button from '../../shared/button'
-import {cleanText} from '../../../utils/utilFunctions'
+import {cleanText, inferSlug} from '../../../utils/utilFunctions'
 import BlogMeta, {Category, CommentNumber} from '../../blog/blog-meta'
 import ModalVideo from '../../shared/modal-video'
 import {Thumbnail, Video, Quote, Linked, Gallery} from '../blog-media'
@@ -42,6 +42,10 @@ const Blog = ({content, ...restProps}) => {
     const modalVideoClose = () => {
         setVideoOpen(false)
     }
+
+    //why is dateslug undefined?
+    const datePath = inferSlug(`testing/date/${dateSlug}`)
+    const foo = 1
       
     return (
         <Fragment>
@@ -70,14 +74,16 @@ const Blog = ({content, ...restProps}) => {
                             {(format === 'quote' || format === 'link') && category && (
                                 <Category slug={`/category/${cleanText(category)}`} text={category}/>
                             )}
-                            {title && <BlogTitle><Link to={`/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>}
+                            {/* {title && <BlogTitle><Link to={`/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>} */}
+                            {title && <BlogTitle><Link to={`/doesthiswork/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>}
                         </BlogHeader>
                             {excerpt && <BlogExcerpt>{excerpt}</BlogExcerpt>}
                         <BlogFooter>
                             <BlogMetaWrap>
                                 {date && (
                                     <BlogMeta>
-                                        <Link to={`/date/${cleanText(dateSlug)}`}>{date}</Link>
+                                        {/* <Link to={`/date/${cleanText(dateSlug)}`}>{date}</Link> */}
+                                        <Link to={datePath}>{date}</Link>
                                     </BlogMeta>
                                 )}
                                 {author && (
