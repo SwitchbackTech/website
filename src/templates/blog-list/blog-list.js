@@ -11,7 +11,7 @@ import Siderbar from '../../containers/global/sidebar'
 import SectionTitle from '../../components/shared/section-title'
 import Blog from '../../components/blog/layout-two'
 import Pagination from '../../components/pagination'
-import {MainWrapper, RecenPostWrap, RecentPostContent} from './blog-list.stc'
+import {MainWrapper, RecentPostWrap, RecentPostContent} from './blog-list.stc'
 
 const BlogList = ({ data, pageContext, location, ...restProps }) => {
     const {sectionTitleStyle, blogStyle} = restProps;
@@ -27,7 +27,7 @@ const BlogList = ({ data, pageContext, location, ...restProps }) => {
                     <Container>
                         <Row>
                             <Col lg={8}>
-                            <RecenPostWrap>
+                            <RecentPostWrap>
                                 <SectionTitle
                                     {...sectionTitleStyle}
                                     title="Most Recent Post"
@@ -50,7 +50,7 @@ const BlogList = ({ data, pageContext, location, ...restProps }) => {
                                     currentPage={currentPage}
                                     numberOfPages={numberOfPages}
                                 />
-                            </RecenPostWrap>
+                            </RecentPostWrap>
                             </Col>
                             <Col lg={4}>
                                 <Siderbar/>

@@ -5,7 +5,7 @@ import { FiLoader } from "react-icons/fi";
 import useQuery from './query'
 import Blog from '../../../components/blog/layout-four'
 import Button from '../../../components/shared/button'
-import {RecenPostWrap, LoadMoreBtnWrap} from './react-post-area.stc'
+import {RecentPostWrap, LoadMoreBtnWrap} from './react-post-area.stc'
  
 const RecentPostArea = (props) => {
     const allBlogs = useQuery();
@@ -35,7 +35,7 @@ const RecentPostArea = (props) => {
     }
     const {blogStyle, loadMoreBtn} = props;
     return (
-        <RecenPostWrap>
+        <RecentPostWrap>
             <Row>
                 <Fragment>
                     {initialBlogs.map(blog => (
@@ -77,7 +77,7 @@ const RecentPostArea = (props) => {
                     {!hasMore && <p>That's all, folks!</p>}
                 </Col>
             </Row>
-        </RecenPostWrap>
+        </RecentPostWrap>
     )
 }
 
