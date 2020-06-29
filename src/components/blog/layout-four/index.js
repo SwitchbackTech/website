@@ -43,9 +43,7 @@ const Blog = ({content, ...restProps}) => {
         setVideoOpen(false)
     }
 
-    //why is dateslug undefined?
-    const datePath = inferSlug(`testing/date/${dateSlug}`)
-    const foo = 1
+    const datePath = inferSlug(`date/${dateSlug}`)
       
     return (
         <Fragment>
@@ -74,8 +72,7 @@ const Blog = ({content, ...restProps}) => {
                             {(format === 'quote' || format === 'link') && category && (
                                 <Category slug={`/category/${cleanText(category)}`} text={category}/>
                             )}
-                            {/* {title && <BlogTitle><Link to={`/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>} */}
-                            {title && <BlogTitle><Link to={`/doesthiswork/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>}
+                            {title && <BlogTitle><Link to={`/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>}
                         </BlogHeader>
                             {excerpt && <BlogExcerpt>{excerpt}</BlogExcerpt>}
                         <BlogFooter>
