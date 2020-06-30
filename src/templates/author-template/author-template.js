@@ -44,7 +44,7 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
 
     const hasMoreToLoad = () => {
         const blogsToLoad = blogs.length - currentShow;
-        setHasMore(blogsToLoad === 0 ? false : true)
+        setHasMore(blogsToLoad <= 0 ? false : true)
     }
     return (
         <Layout>
@@ -61,7 +61,7 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
                             </Col>
                             <Col sm={8} lg={7}>
                                 <AuthorInfo>
-                                    {author.name && <Heading {...nameHeadingCSS}><Text {...nameTextCSS}>I'm </Text>{author.name}</Heading>}
+                                    {author.name && <Heading {...nameHeadingCSS}><Text {...nameTextCSS}></Text>{author.name}</Heading>}
                                     {author.tagline && <Heading {...taglineCSS}>{author.tagline}</Heading>}
                                     {author.bio && <Text {...bioCSS}>{author.bio}</Text>}
                                     {author.social && <Social {...socialCSS} social={author.social}/>}
