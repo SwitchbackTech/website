@@ -44,6 +44,7 @@ const Blog = ({content, ...restProps}) => {
     }
 
     const datePath = inferSlug(`date/${dateSlug}`)
+    const categoryPath = inferSlug(`category/${category}`)
       
     return (
         <Fragment>
@@ -64,7 +65,7 @@ const Blog = ({content, ...restProps}) => {
                         {format === 'link' && <Linked layout={2} link={link}/>}
                         {format === 'gallery' && <Gallery images={images}/>}
                         {(format === 'image' || format === 'video' || format === 'gallery') && category && (
-                            <BlogCategory to={`/category/${cleanText(category)}`}>{category}</BlogCategory>
+                            <BlogCategory to={categoryPath}>{category}</BlogCategory>
                         )}
                     </BlogMedia>
                     <BlogContent>
@@ -79,7 +80,6 @@ const Blog = ({content, ...restProps}) => {
                             <BlogMetaWrap>
                                 {date && (
                                     <BlogMeta>
-                                        {/* <Link to={`/date/${cleanText(dateSlug)}`}>{date}</Link> */}
                                         <Link to={datePath}>{date}</Link>
                                     </BlogMeta>
                                 )}
@@ -93,11 +93,12 @@ const Blog = ({content, ...restProps}) => {
                                 </BlogMeta>
                             </BlogMetaWrap>
                             <BlogBtn>
-                                <Button {...btnStyle} icon={<FiChevronRight/>} to={`/${slug}`}>Read More</Button>
+                                <Button {...btnStyle} icon={<FiChevronRight/>} to={slug}>Read More</Button>
                             </BlogBtn>
                         </BlogFooter>
                     </BlogContent>
                 </BlogInner>
+                <h1>Layout FOUR Blog</h1>
             </BlogWrapper>
             <ModalVideo
                 channel={video_channel}
