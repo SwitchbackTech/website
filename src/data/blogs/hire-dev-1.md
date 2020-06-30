@@ -9,6 +9,7 @@ link: 'dummy link to avoid query error for required field. can remove once anoth
 category: hiring
 tags: 
     - non-technical
+    - reputation
 is_featured: true
 custom_slug: '/hire-dev-reputation'
 ---
