@@ -2,7 +2,7 @@ import styled, {css} from 'styled-components'
 import {Loading} from '../../../assets/css/animations'
 import {device} from '../../../theme'
 
-export const RecenPostWrap = styled.section `
+export const RecentPostWrap = styled.section `
     margin-bottom: 50px;
     ${device.medium}{
         margin-bottom: 0;

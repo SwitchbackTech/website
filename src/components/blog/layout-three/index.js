@@ -1,7 +1,8 @@
 import React, {Fragment, useState} from 'react'
-import Anchor from '../../shared/anchor'
+import {Link} from 'gatsby'
 import ModalVideo from '../../shared/modal-video'
 import {Thumbnail, Video, Quote, Linked, Gallery} from '../blog-media'
+import {inferSlug} from '../../../utils/utilFunctions'
 import {
     BlogWrap, 
     BlogContent, 
@@ -31,13 +32,14 @@ const Blog = ({content, ...restProps}) => {
     }
     
     const {boxCSS, titleCSS, dateCSS} = restProps
+    const datePath = inferSlug(`date/${dateSlug}`)
     
     return (
         <Fragment>
             <BlogWrap {...boxCSS}>
                 <BlogContent>
-                    {date && <BlogDate {...dateCSS} path={`/date/${dateSlug}`}>{date}</BlogDate>}
-                    {title && <BlogTitle {...titleCSS}><Anchor path={`/${slug}`}>{title}</Anchor></BlogTitle>}
+                    {date && <BlogDate {...dateCSS} path={`${datePath}`}>{date}</BlogDate>}
+                    {title && <BlogTitle {...titleCSS}><Link to={`/${slug}`}>{title}</Link></BlogTitle>}
                 </BlogContent>
                 <BlogMedia>
                     {(format === 'image' || format === 'standard') && (

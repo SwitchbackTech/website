@@ -8,6 +8,7 @@ category: hiring
 tags: 
     - non-technical
 is_featured: true
+custom_slug: '/hire-dev-prioritization'
 ---
 
 A developer without prioritization skills needlessly extends timelines, builds inferior products, and costs more money.  Here's how to assess how well a developer prioritizes.

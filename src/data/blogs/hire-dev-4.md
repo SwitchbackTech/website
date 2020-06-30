@@ -1,6 +1,6 @@
 ---
 title: 'How To Hire A Good Software Developer (without knowing how to code) - Communication'
-date: "2020-06-28 08:00:00"
+date: '2020-06-28 08:00:00'
 author: 'Ty Hitzeman'
 format: 'image'
 image: '../images/communication.jpg'
@@ -8,12 +8,10 @@ category: hiring
 tags: 
     - non-technical
 is_featured: true
-
+custom_slug: '/hire-dev-communication'
 ---
 
 Contrary to the stereotype of the reclusive developer who works in isolation, devs constantly communicate with others. How well they do that can have a bigger impact on your project's success than their technical skills alone. Yet evaluating a dev's communication skills is not as easy as scrolling through a GitHub profile or resume. So, here are some ways how you can quickly assess a developer's communication skills over a short conversation.
-
-
 
 #### Find something that you and the dev disagree on and discuss it. 
 How does he express himself? Does he crumble and disregard his opinion after realizing it's different than yours? Does he stubbornly cling to it without hearing your side first? A strong communicator can make his opinions with confidence while staying open to new perspectives.  

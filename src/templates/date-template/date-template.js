@@ -12,9 +12,7 @@ import SearchWidget from '../../containers/widgets/search'
 import RecentPostWidget from '../../containers/widgets/recent-post'
 import InstagramWidget from '../../containers/widgets/instagram'
 import CategoryWidget from '../../containers/widgets/categories'
-// import CTAWidget from '../../containers/widgets/cta'
 import SubscribeWidget from '../../containers/widgets/subscribe'
-import InstagramArea from '../../containers/global/instagram'
 import {SectionWrap, PageHeader, BlogListWrap, SidebarWrap} from './date-template.stc'
 
 const DateTemplate = ({ data, pageContext, location, ...restProps }) => {
@@ -62,7 +60,6 @@ const DateTemplate = ({ data, pageContext, location, ...restProps }) => {
                         </Row>
                     </Container>
                 </SectionWrap>
-                <InstagramArea/>
             </div>
             <Footer/>
         </Layout>

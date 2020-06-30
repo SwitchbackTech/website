@@ -9,6 +9,7 @@ category: hiring
 tags: 
     - non-technical
 is_featured: true
+custom_slug: '/hire-dev-empathy'
 ---
 
 Empathetic developers build for the user, customer, and future maintainers, while apathetic developers build for themselves. An apathetic developer silently constructs a ceiling over your product's quality. Everything else about your company might be exceptional--your culture, process, product-market-fit--but working with an apathetic dev results in mediocrity. The table illustrates why.

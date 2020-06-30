@@ -11,7 +11,7 @@ export const MainWrapper = styled.main `
     }
 `;
 
-export const RecenPostWrap = styled.section `
+export const RecentPostWrap = styled.section `
     margin-bottom: 50px;
     ${device.medium}{
         margin-bottom: 0;

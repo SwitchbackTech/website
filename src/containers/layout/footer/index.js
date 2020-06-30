@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { useStaticQuery, graphql } from "gatsby";
 import LogoImg from "../../../assets/img/logo.png";
-import List, { ListItem } from "../../../components/shared/list";
+import List from "../../../components/shared/list";
 import Text from "../../../components/shared/text";
 import Anchor from "../../../components/shared/anchor";
 import Social from "../../../components/socials/layout-one";

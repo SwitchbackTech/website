@@ -8,7 +8,7 @@ import Button from '../../shared/button'
 import { ContactFormWrap } from './contact-form.stc'
 
 const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
-    const { register, handleSubmit, errors, reset } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         mode: "onBlur"
     })
     const [serverState, setServerState] = useState({
