@@ -87,7 +87,6 @@ const Blog = ({content, ...restProps}) => {
                         </BlogFooter>
                     </BlogContent>
                 </BlogInner>
-                <h1>*layout TWO*</h1>
             </BlogWrapper>
             <ModalVideo
                 channel={video_channel}

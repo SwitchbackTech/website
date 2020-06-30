@@ -64,7 +64,7 @@ const SearchTemplate = ({ data, pageContext, location, ...restProps }) => {
                 <PageHeader>
                   <Text {...textCSS}>Search Results for "{query}"</Text>
                   <Heading {...headingCSS}>
-                    Post found: {filteredBlogs ? filteredBlogs.length : 0}
+                    Posts found: {filteredBlogs ? filteredBlogs.length : 0}
                   </Heading>
                 </PageHeader>
                 <BlogListWrap>
