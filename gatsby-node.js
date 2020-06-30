@@ -40,6 +40,7 @@ exports.onCreateNode = ({ node, actions }) => {
         node,
         name: "authorId",
         value: cleanText(node.frontmatter.author),
+        // value: cleanText(node.frontmatter.author.name),
       });
     }
   }
@@ -175,7 +176,7 @@ exports.createPages = async ({ graphql, actions }) => {
   authors = _.uniq(authors);
   authors.forEach((author) => {
     createPage({
-      path: `${prefix}/author/${author.Id}`,
+      path: `${prefix}/author/${author}`,
       component: authorPage,
       context: {
         author,
