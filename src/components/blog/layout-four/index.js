@@ -85,7 +85,8 @@ const Blog = ({content, ...restProps}) => {
                                 )}
                                 {author && (
                                     <BlogMeta>
-                                        <Link to={`/author/${cleanText(authorId)}`}>{author.name}</Link>
+                                        {/* <Link to={`/author/${cleanText(authorId)}`}>{author.name}</Link> */}
+                                        <Link to={inferSlug(`/author/${authorId}`)}>{author.name}</Link>
                                     </BlogMeta>
                                 )}
                                 <BlogMeta>
