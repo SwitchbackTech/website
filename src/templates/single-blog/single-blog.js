@@ -99,9 +99,9 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                                     <Link to={`${inferSlug(authorPath)}`}>{author.name}</Link>
                                                 </BlogMeta>
                                             )}
-                                            <BlogMeta>
-                                                <CommentNumber slug={custom_slug} title={title} id={postID} />
-                                            </BlogMeta>
+                                            {/* <BlogMeta> */}
+                                                {/* <CommentNumber slug={custom_slug} title={title} id={postID} /> */}
+                                            {/* </BlogMeta> */}
                                         </PostMeta>
                                     </PostHeader>
                                     <div className="post-content" dangerouslySetInnerHTML={{ __html: html }} />
@@ -118,7 +118,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         </PostTags>
                                     </PostFooter>
                                 </SinglePostWrap>
-                                <Comment slug={custom_slug} title={title} id={postID} />
+                                {/* <Comment slug={custom_slug} title={title} id={postID} /> */}
                                 <RelatedPosts category={category} tags={tags} currentArticleSlug={custom_slug} />
                             </Col>
                             <Col lg={4}>
