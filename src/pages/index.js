@@ -1,9 +1,12 @@
 import React from "react";
+import { Link } from "gatsby"
+
 import Layout from "../containers/layout/layout";
 const IndexPage = () => (
   <Layout>
-    <h1>Nothin to see here</h1>
-    <p>TODO: route to /blog</p>
+    <script>window.location.href="/blog"</script>
+    <h1>Nothin to see here yet.</h1>
+    <h1>Checkout the <Link to="/blog">Blog</Link></h1>
   </Layout>
 );
 
