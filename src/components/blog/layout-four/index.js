@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import { FiChevronRight } from "react-icons/fi";
 import Button from '../../shared/button'
-import {slugify} from '../../../utils/utilFunctions'
+import {cleanText, inferSlug} from '../../../utils/utilFunctions'
 import BlogMeta, {Category, CommentNumber} from '../../blog/blog-meta'
 import ModalVideo from '../../shared/modal-video'
 import {Thumbnail, Video, Quote, Linked, Gallery} from '../blog-media'
@@ -42,6 +42,9 @@ const Blog = ({content, ...restProps}) => {
     const modalVideoClose = () => {
         setVideoOpen(false)
     }
+
+    const datePath = inferSlug(`date/${dateSlug}`)
+    const categoryPath = inferSlug(`category/${category}`)
       
     return (
         <Fragment>
@@ -62,13 +65,13 @@ const Blog = ({content, ...restProps}) => {
                         {format === 'link' && <Linked layout={2} link={link}/>}
                         {format === 'gallery' && <Gallery images={images}/>}
                         {(format === 'image' || format === 'video' || format === 'gallery') && category && (
-                            <BlogCategory to={`/category/${slugify(category)}`}>{category}</BlogCategory>
+                            <BlogCategory to={categoryPath}>{category}</BlogCategory>
                         )}
                     </BlogMedia>
                     <BlogContent>
                         <BlogHeader> 
                             {(format === 'quote' || format === 'link') && category && (
-                                <Category slug={`/category/${slugify(category)}`} text={category}/>
+                                <Category slug={`/category/${cleanText(category)}`} text={category}/>
                             )}
                             {title && <BlogTitle><Link to={`/${slug}`}>{truncateString(title, 30)}</Link></BlogTitle>}
                         </BlogHeader>
@@ -77,12 +80,12 @@ const Blog = ({content, ...restProps}) => {
                             <BlogMetaWrap>
                                 {date && (
                                     <BlogMeta>
-                                        <Link to={`/date/${slugify(dateSlug)}`}>{date}</Link>
+                                        <Link to={datePath}>{date}</Link>
                                     </BlogMeta>
                                 )}
                                 {author && (
                                     <BlogMeta>
-                                        <Link to={`/author/${slugify(authorId)}`}>{author.name}</Link>
+                                        <Link to={inferSlug(`/author/${authorId}`)}>{author.name}</Link>
                                     </BlogMeta>
                                 )}
                                 <BlogMeta>
@@ -90,7 +93,7 @@ const Blog = ({content, ...restProps}) => {
                                 </BlogMeta>
                             </BlogMetaWrap>
                             <BlogBtn>
-                                <Button {...btnStyle} icon={<FiChevronRight/>} to={`/${slug}`}>Read More</Button>
+                                <Button {...btnStyle} icon={<FiChevronRight/>} to={slug}>Read More</Button>
                             </BlogBtn>
                         </BlogFooter>
                     </BlogContent>

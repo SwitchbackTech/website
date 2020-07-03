@@ -1,21 +1,13 @@
-import React from "react"
-import SEO from '../components/seo'
-import Layout from "../containers/layout/layout"
-import Header from '../containers/layout/header'
-import Footer from '../containers/layout/footer'
-import HeroArea from '../containers/home/hero-area'
-import MainArea from '../containers/home/main-area'
+import React from "react";
+import { Link } from "gatsby"
 
+import Layout from "../containers/layout/layout";
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Header/>
-    <div className="main-content">
-      <HeroArea/>
-      <MainArea/>  
-    </div>
-    <Footer/>
+    <script>window.location.href="/blog"</script>
+    <h1>Nothin to see here yet.</h1>
+    <h1>Checkout the <Link to="/blog">Blog</Link></h1>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

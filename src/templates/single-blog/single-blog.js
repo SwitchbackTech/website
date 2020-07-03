@@ -8,7 +8,7 @@ import Footer from '../../containers/layout/footer'
 import BlogMeta, { CommentNumber, Category, Tags } from '../../components/blog/blog-meta'
 import { Thumbnail, Video, Quote, Linked, Gallery } from '../../components/blog/blog-media'
 import ModalVideo from '../../components/shared/modal-video'
-import { slugify } from '../../utils/utilFunctions'
+import {cleanText, inferSlug } from '../../utils/utilFunctions'
 import SearchWidget from '../../containers/widgets/search'
 import RecentPostWidget from '../../containers/widgets/recent-post'
 import InstagramWidget from '../../containers/widgets/instagram'
@@ -32,12 +32,19 @@ import {
 } from './single-blog.stc'
 
 const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
-    const { dateSlug, slug, postID, authorId } = data.markdownRemark.fields;
+    const { dateSlug, postID, authorId } = data.markdownRemark.fields;
     const {
         category, date, format, title, image,
         video_link, quote_text, quote_author,
-        link, images, author, tags
+        link, images, author, tags, custom_slug
     } = data.markdownRemark.frontmatter;
+
+    const datePath = inferSlug('date/' + dateSlug);
+    const authorPath = inferSlug('author/' + authorId);
+    const categoryPath = inferSlug('category/' + category);
+    const thumbnailPath = cleanText(custom_slug);
+
+
     const { html } = data.markdownRemark;
     let video_arr, video_id, video_channel;
     if (video_link) {
@@ -65,7 +72,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                 <SinglePostWrap>
                                     <PostMedia>
                                         {(format === 'image' || format === 'standard') && (
-                                            <Thumbnail path={`/${slug}`} image={image} title={title} />
+                                            <Thumbnail path={`${thumbnailPath}`} image={image} title={title} />
                                         )}
                                         {format === 'video' && (
                                             <Video
@@ -79,21 +86,21 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         {format === 'gallery' && <Gallery images={images} />}
                                     </PostMedia>
                                     <PostHeader>
-                                        {category && <Category slug={`/category/${slugify(category)}`} text={category} />}
+                                        {category && <Category slug={categoryPath} text={category} />}
                                         {title && <PostTitle>{title}</PostTitle>}
                                         <PostMeta>
                                             {date && (
                                                 <BlogMeta>
-                                                    <Link to={`/date/${slugify(dateSlug)}`}>{date}</Link>
+                                                    <Link to={`${inferSlug(datePath)}`}>{date}</Link>
                                                 </BlogMeta>
                                             )}
                                             {author && (
                                                 <BlogMeta>
-                                                    <Link to={`/author/${slugify(authorId)}`}>{author.name}</Link>
+                                                    <Link to={`${inferSlug(authorPath)}`}>{author.name}</Link>
                                                 </BlogMeta>
                                             )}
                                             <BlogMeta>
-                                                <CommentNumber slug={slug} title={title} id={postID} />
+                                                <CommentNumber slug={custom_slug} title={title} id={postID} />
                                             </BlogMeta>
                                         </PostMeta>
                                     </PostHeader>
@@ -103,7 +110,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                             <h4>Share This:</h4>
                                             <SocialShare
                                                 title={title}
-                                                slug={slug}
+                                                slug={custom_slug}
                                             />
                                         </PostShare>
                                         <PostTags>
@@ -111,8 +118,8 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                                         </PostTags>
                                     </PostFooter>
                                 </SinglePostWrap>
-                                <Comment slug={slug} title={title} id={postID} />
-                                <RelatedPosts category={category} tags={tags} currentArticleSlug={slug} />
+                                <Comment slug={custom_slug} title={title} id={postID} />
+                                <RelatedPosts category={category} tags={tags} currentArticleSlug={custom_slug} />
                             </Col>
                             <Col lg={4}>
                                 <SidebarWrap>
@@ -160,6 +167,7 @@ export const postQuery = graphql`
                 quote_text
                 quote_author
                 link
+                custom_slug
                 image {
                   childImageSharp {
                     fluid(maxWidth: 839, maxHeight: 455, quality: 100, srcSetBreakpoints: 6) {

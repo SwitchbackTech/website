@@ -53,7 +53,7 @@ const Blog = ({content, ...restProps}) => {
                         {format === 'gallery' && <Gallery images={images}/>}
                     </BlogMedia>
                     <BlogContent>
-                        {title && <BlogTitle><Anchor path={`/${slug}`}>{title}</Anchor></BlogTitle>}
+                        {title && <BlogTitle><Anchor path={`${slug}`}>{title}</Anchor></BlogTitle>}
                         <BlogMeta>
                             {date && <BlogMetaItem path={`/date/${dateSlug}`}>{date}</BlogMetaItem>}
                         </BlogMeta>

@@ -5,7 +5,7 @@ import { ButtonWrap, AnchorButton } from './button.stc';
 
 const Button = ({ children, ...props }) => {
     const { to, icon, ...restProps } = props;
-    const internal = /^\/(?!\/)/.test(to);
+    const internal = /^\/(?!\/)/.test(to); // true if to starts with '/'
     const classes = icon && 'hasIcon';
     if (to) {
         if (internal) {

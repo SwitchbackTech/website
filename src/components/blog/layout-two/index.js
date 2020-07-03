@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import { FiChevronRight } from "react-icons/fi";
 import Button from '../../shared/button'
-import {slugify} from '../../../utils/utilFunctions'
+import {cleanText, inferSlug} from '../../../utils/utilFunctions'
 import BlogMeta, {Category, CommentNumber} from '../../blog/blog-meta'
 import ModalVideo from '../../shared/modal-video'
 import {Thumbnail, Video, Quote, Linked, Gallery} from '../blog-media'
@@ -25,6 +25,13 @@ const Blog = ({content, ...restProps}) => {
         excerpt, postID, video_link, quote_text, quote_author,
         link, images
     } = content;
+
+    const datePath = inferSlug('date/' + dateSlug);
+    // const authorPath = inferSlug('author/' + authorId);
+    const categoryPath = inferSlug('category/' + category);
+    // const thumbnailPath = cleanText(custom_slug);
+
+
     const {btnStyle, categoryStyle, ...restStyles} = restProps;
     let video_arr, video_id, video_channel;
     if(video_link){
@@ -61,12 +68,12 @@ const Blog = ({content, ...restProps}) => {
                     </BlogMedia>
                     <BlogContent>
                         <BlogHeader> 
-                            {category && <Category {...categoryStyle} slug={`/category/${slugify(category)}`} text={category}/>}
+                            {category && <Category {...categoryStyle} slug={categoryPath} text={category}/>}
                             {title && <BlogTitle><Link to={`/${slug}`}>{title}</Link></BlogTitle>}
                             <BlogMetaWrap>
                                 {date && (
                                     <BlogMeta>
-                                        <Link to={`/date/${slugify(dateSlug)}`}>{date}</Link>
+                                        <Link to={`${inferSlug(datePath)}`}>{date}</Link>
                                     </BlogMeta>
                                 )}
                                 <BlogMeta>
@@ -76,7 +83,7 @@ const Blog = ({content, ...restProps}) => {
                         </BlogHeader>
                         {excerpt && <BlogExcerpt>{excerpt}</BlogExcerpt>}
                         <BlogFooter>
-                            <Button {...btnStyle} icon={<FiChevronRight/>} to={`/${slug}`}>Read More</Button>
+                            <Button {...btnStyle} icon={<FiChevronRight/>} to={slug}>Read More</Button>
                         </BlogFooter>
                     </BlogContent>
                 </BlogInner>
