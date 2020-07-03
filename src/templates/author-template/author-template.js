@@ -11,7 +11,6 @@ import Heading from '../../components/shared/heading'
 import Text from '../../components/shared/text'
 import Social from '../../components/socials/layout-two'
 import Blog from '../../components/blog/layout-two'
-import InstagramArea from '../../containers/global/instagram'
 import Button from '../../components/shared/button'
 import {AuthorSection, AuthorImg, AuthorInfo, AuthorBlogs, LoadMoreBtnWrap} from './author-template.stc'
 
@@ -45,7 +44,7 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
 
     const hasMoreToLoad = () => {
         const blogsToLoad = blogs.length - currentShow;
-        setHasMore(blogsToLoad === 0 ? false : true)
+        setHasMore(blogsToLoad <= 0 ? false : true)
     }
     return (
         <Layout>
@@ -62,7 +61,7 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
                             </Col>
                             <Col sm={8} lg={7}>
                                 <AuthorInfo>
-                                    {author.name && <Heading {...nameHeadingCSS}><Text {...nameTextCSS}>I'm </Text>{author.name}</Heading>}
+                                    {author.name && <Heading {...nameHeadingCSS}><Text {...nameTextCSS}></Text>{author.name}</Heading>}
                                     {author.tagline && <Heading {...taglineCSS}>{author.tagline}</Heading>}
                                     {author.bio && <Text {...bioCSS}>{author.bio}</Text>}
                                     {author.social && <Social {...socialCSS} social={author.social}/>}
@@ -115,15 +114,14 @@ const AuthorTemplate = ({ data, pageContext, location, ...restProps }) => {
                                             disabled={!hasMore} 
                                             onClick={loadMoreHandler} 
                                             {...loadMoreBtn} 
-                                            icon={<FiLoader/>}>Load More Article</Button>
+                                            icon={<FiLoader/>}>Gimmie more</Button>
                                     </LoadMoreBtnWrap>
                                 )}
-                                {!hasMore && <p>There is no more posts to show.</p>}
+                                {!hasMore && <p>That's all, folks!</p>}
                             </Col>
                         </Row>
                     </Container>
                 </AuthorBlogs>
-                <InstagramArea/>
             </div>
             <Footer/>
         </Layout>
@@ -238,11 +236,8 @@ export const query = graphql `
             tagline
             bio
             social {
-                facebook
-                instagram
                 linkedin
-                twitter
-                youtube
+                github
             }
             image {
                 childImageSharp {

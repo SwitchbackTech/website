@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Fatima`,
-    titleTemplate: `Creative React Gatsby Blog Template`,
-    description: `Kick off your next, great blogging website with this Gatsby template. This template ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Switchback`,
+    titleTemplate: `Epic Software`,
+    description: `Switchback's Blog`,
+    author: `Ty Hitzeman`,
     image: 'banner.jpg',
-    siteUrl: "http://localhost:8000/",
-    mailchimp_endpoint: "https://gmail.us19.list-manage.com/subscribe/post?u=9fac302a213ab56195e9125e7&amp;id=a30904c5f3",
-    disqus_shortname: "thern-1",
+    siteUrl: "http://localhost:8000/blog",
+    mailchimp_endpoint: "https://tech.us18.list-manage.com/subscribe/post?u=cf05d1d7d6f957a5f11cea628&amp;id=b6b72a31e0",
+    disqus_shortname: "switchback",
     getform_url: "https://getform.io/f/7a6695a7-c8e3-442c-bc2f-d46d3b9a535e",
     contact: {
       social: {
         facebook: 'https://facebook.com',
         twitter: 'https://twitter.com',
-        instagram: 'https://instagram.com',
-        linkedin: 'https://linkedin.com',
-        youtube: 'https://youtube.com',
+        instagram: 'https://instagram.com/switchback.tech',
+        linkedin: 'http://linkedin.com/company/switchbacktech',
+        youtube: 'https://www.youtube.com/channel/UCyB1I3yUNkIea2Wh7WaEioA',
       }
     }
   },
@@ -81,9 +81,9 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram`,
       options: {
-        // type: `hashtag`,
+        // type: `user-profile`,
         // hashtag: `naturesbeauty`,
-        username: `rainbowit10`,
+        username: `switchback.tech`,
         // access_token: "EAAJfJNguJz4BAI3u9hxFCVJUwVgT39AzmO7nyRAPPEhHEiyyElx7cYSxbv5hHWMyopFM00R0wh7wfoghe7vfePBteFp9pKKkDJKdAPl0b1fKTkWu2s9nYhiYrxHnq28n3mZC4HUSYwxJeaurinARaOqxOzaVfwlBJZBEMApAZDZD",
         // instagram_id: "rainbowit5"
       },
@@ -91,8 +91,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fatima`,
-        short_name: `Fatima`,
+        name: `Test`,
+        short_name: `Test Shortname`,
         start_url: `/`,
         background_color: `#333333`,
         theme_color: `#ffd2d1`,

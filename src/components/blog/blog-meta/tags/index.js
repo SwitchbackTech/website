@@ -1,8 +1,9 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import { FiTag } from "react-icons/fi";
-import {createList, slugify} from '../../../../utils/utilFunctions'
+import {createList, cleanText} from '../../../../utils/utilFunctions'
 import {TagWrapper} from './tags.stc'
+import {inferSlug} from '../../../../utils/utilFunctions'
 
 export const Tags = ({tags, ...restProps}) => {
     let tagList = createList({
@@ -12,7 +13,7 @@ export const Tags = ({tags, ...restProps}) => {
         <TagWrapper {...restProps}>
             <FiTag className="icon"/>
             {tagList.map(tag => (
-                <Link to={`/tag/${slugify(tag.text)}`} key={slugify(tag.text)}>
+                <Link to={inferSlug('tag/' + tag.text)} key={cleanText(tag.text)}>
                     {tag.text}{tag.sep}
                 </Link>
             ))}

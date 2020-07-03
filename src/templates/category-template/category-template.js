@@ -12,9 +12,7 @@ import SearchWidget from '../../containers/widgets/search'
 import RecentPostWidget from '../../containers/widgets/recent-post'
 import InstagramWidget from '../../containers/widgets/instagram'
 import CategoryWidget from '../../containers/widgets/categories'
-import CTAWidget from '../../containers/widgets/cta'
 import SubscribeWidget from '../../containers/widgets/subscribe'
-import InstagramArea from '../../containers/global/instagram'
 import {SectionWrap, PageHeader, BlogListWrap, SidebarWrap} from './category-template.stc'
 
 const CategoryTemplate = ({ data, pageContext, location, ...restProps }) => {
@@ -55,14 +53,12 @@ const CategoryTemplate = ({ data, pageContext, location, ...restProps }) => {
                                     <RecentPostWidget/>
                                     <InstagramWidget/>
                                     <CategoryWidget/>
-                                    <CTAWidget/>
                                     <SubscribeWidget/>
                                 </SidebarWrap>
                             </Col>
                         </Row>
                     </Container>
                 </SectionWrap>
-                <InstagramArea/>
             </div>
             <Footer/>
         </Layout>

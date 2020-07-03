@@ -2,7 +2,7 @@ import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import Emoji from '../../../assets/img/icons/emoji-icon.png'
 import Heading from '../../../components/shared/heading'
-import Button from '../../../components/shared/button'
+// import Button from '../../../components/shared/button'
 import {ErrorWrap, ErorrContent, ErrorTopText, ErrorBottomText} from './error-area.stc'
 
 const ErrorArea = ({headingCSS, btnCSS}) => {
@@ -17,8 +17,8 @@ const ErrorArea = ({headingCSS, btnCSS}) => {
                             </ErrorTopText>
                             <ErrorBottomText>
                                 <img src={Emoji} alt="Sad Emoji"/>
-                                <Heading {...headingCSS}>Sorry, This Page Was Lost.</Heading>
-                                <Button {...btnCSS}>Back To Homepage</Button>
+                                <Heading {...headingCSS}>Uh oh, this page was lost.</Heading>
+                                {/* <Button {...btnCSS}>Back to safety</Button> */}
                             </ErrorBottomText>
                         </ErorrContent>
                     </Col>

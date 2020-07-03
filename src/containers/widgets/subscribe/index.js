@@ -1,6 +1,6 @@
 import React from 'react'
 import WidgetBox, {WidgetTitle} from '../../../components/shared/widget-box'
-import Mailchimp from '../../../components/forms/mailchimp-two'
+import Mailchimp from '../../../components/forms/mailchimp'
 import {FormWrapper, SubscribeText} from './subscribe.stc'
 
 const SearchWidget = ({widgetStyle, widgetTitleStyle, inputStyle}) => {
@@ -8,7 +8,7 @@ const SearchWidget = ({widgetStyle, widgetTitleStyle, inputStyle}) => {
         <WidgetBox {...widgetStyle}>
             <WidgetTitle {...widgetTitleStyle}>Subscribe</WidgetTitle>
             <FormWrapper>
-                <SubscribeText>Leave your email here and stay informed about our promotions and new arrivals.</SubscribeText>
+                <SubscribeText>No spam. Unsubscribe anytime</SubscribeText>
                 <Mailchimp/>
             </FormWrapper>
         </WidgetBox>

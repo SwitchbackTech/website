@@ -1,6 +1,8 @@
 import React from 'react'
 import NavBar, {NavItem, NavLink} from '../../shared/navbar'
 import {MainMenuWrap} from './mainmenu.stc'
+import {inferSlug} from '../../../utils/utilFunctions'
+
  
 export const MainMenu = ({menuData, ...props}) => {
     const menuarr = menuData; 
@@ -10,7 +12,7 @@ export const MainMenu = ({menuData, ...props}) => {
                 {menuarr.map((menu, i) => { 
                     return (
                         <NavItem key={`mainmenu-${i}`}>
-                            <NavLink path={menu.node.path}>{menu.node.title}</NavLink>
+                            <NavLink path={inferSlug(menu.node.path)}>{menu.node.title}</NavLink>
                         </NavItem>
                     )
                 })}     

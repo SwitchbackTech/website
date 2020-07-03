@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
-import RecentPostArea from '../recet-post-area'
+import RecentPostArea from '../recent-post-area'
 import Siderbar from '../../global/sidebar'
 import {MainWrapper} from './main-area.stc'
 

@@ -8,7 +8,7 @@ import Button from '../../shared/button'
 import { ContactFormWrap } from './contact-form.stc'
 
 const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
-    const { register, handleSubmit, errors, reset } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         mode: "onBlur"
     })
     const [serverState, setServerState] = useState({
@@ -46,7 +46,7 @@ const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
             data
         })
             .then(res => {
-                handleServerResponse(true, "Thanks! for being with us", form);
+                handleServerResponse(true, "Booyah! Your message was submitted.", form);
             })
             .catch(err => {
                 handleServerResponse(false, err.response.data.error, form);
@@ -73,7 +73,7 @@ const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
                                     required: 'Full Name Required',
                                 })}
                             />
-                            <Label htmlFor="name">Full Name</Label>
+                            <Label htmlFor="name">Name</Label>
                             {errors.name && <span className="error">{errors.name.message}</span>}
                         </FormGroup>
                         <FormGroup
@@ -92,7 +92,7 @@ const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
                                     }
                                 })}
                             />
-                            <Label htmlFor="email">Enter Your Email</Label>
+                            <Label htmlFor="email">Email</Label>
                             {errors.email && <span className="error">{errors.email.message}</span>}
                         </FormGroup>
                         <FormGroup
@@ -125,7 +125,7 @@ const ContactForm = ({ formgroupCSS, textareaCSS, btnCSS, url }) => {
                                     minLength: { value: 10, message: "Minimum length is 10" }
                                 })}
                             ></Textarea>
-                            <Label htmlFor="message">Write your message here.</Label>
+                            <Label htmlFor="message">Message</Label>
                             {errors.message && <span className="error">{errors.message.message}</span>}
                         </FormGroup>
                     </Col>
@@ -156,7 +156,7 @@ ContactForm.defaultProps = {
         btnsize: 'fullwidth',
         varient: 'contained',
         shape: 'rounded',
-        bg: '#f8777c',
+        bg: '#688ca4',
         fontSize: '13px',
         letterSpacing: '1px',
         iconcss: {

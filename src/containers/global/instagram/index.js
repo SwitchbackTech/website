@@ -10,7 +10,7 @@ import { SectionWrap, InstagramWrap, InstagramItem } from './instagram.stc'
 const Instagram = ({ headingCSS, textCSS }) => {
   const instagramData = useStaticQuery(graphql`
       query instagramQuery {
-        allInstaNode(limit: 5) {
+        allInstaNode(sort: {order: DESC, fields: timestamp}, limit: 5) {
           edges {
             node {
               preview
@@ -34,7 +34,7 @@ const Instagram = ({ headingCSS, textCSS }) => {
       <Container>
         <Row>
           <Col lg={12}>
-            <Heading {...headingCSS}><FiInstagram /> <Text {...textCSS}>Me On Instagram</Text></Heading>
+            <Heading {...headingCSS}><FiInstagram /> <Text {...textCSS}>Check the gram</Text></Heading>
           </Col>
         </Row>
         <Row>

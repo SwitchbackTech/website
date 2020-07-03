@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fatima || Creative React Gatsby Blog Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/documenter_style.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+        html,
+        body {
+            background-color: #FFFFFF;
+            color: #383838;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #383838;
+        }
+
+        section table {
+            background-color: #FFFFFF;
+        }
+
+        ::-moz-selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        ::selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        a.brand {
+            background-image: url(assets/images/image_1.png);
+        }
+
+        a,
+        a:hover,
+        a:active {
+            color: #0000FF;
+        }
+
+        hr {
+            border-top: 1px solid #EBEBEB;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        div.navbar-inner,
+        .navbar .nav li ul {
+            background: #DDDDDD;
+            color: #222222;
+        }
+
+        a.btn-navbar {
+            background: #DDDDDD;
+            color: #222222;
+        }
+
+        .navbar .nav li a {
+            color: #222222;
+            text-shadow: 1px 1px 0px #EEEEEE;
+        }
+
+        .navbar .nav li a:hover,
+        .navbar .nav li.active a {
+            text-shadow: none;
+        }
+
+        div.navbar-inner ul {}
+
+        .navbar .nav>li a {
+            color: #444444;
+        }
+
+        .navbar .nav>li a:hover,
+        a.btn-navbar:hover {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        .navbar .nav .active>a,
+        .navbar .nav .active>a:hover,
+        a.btn-navbar:active {
+            background-color: #444444;
+            color: #DDDDDD;
+        }
+
+        .navbar .nav li ul li a:hover {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        .navbar .nav li ul li a:active {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        .btn-primary {
+            background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+            background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+            background-image: linear-gradient(top, #0088CC, #0044CC);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+            border-color: #0044CC #0044CC #bfbfbf;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            background-color: #0044CC;
+        }
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+        #theme_options2 img {
+            border: 1px solid #eee;
+            margin: 10px 0;
+            max-width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body class="documenter-project-Reale Aste-" data-spy="scroll" id="top">
+
+    <!-- Documentation Navbar -->
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span
+                        class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a
+                    class="brand" href="#">Fatima - Creative React Gatsby Blog Template</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="#documenter_content" title="Theme Installation">Overview</a></li>
+                        <li><a href="#started" title="Getting started">Getting Started</a></li>
+                        <li><a href="#structure" title="Structure">Folder Structure</a></li>
+                        <li><a href="#htmlstructure" title="JSX Structure">JSX Structure</a></li>
+                        <li><a href="#customization" title="Customize">Customization</a></li>
+                        <li><a href="#dependencies" title="Dependencies">Dependencies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Main Container Beginning -->
+
+    <div class="container" id="documenter_content">
+        <div id="documenter-cover">
+            <div class="masthead">
+                <h1 style="text-align: center">Fatima - Creative React Gatsby Blog Template</h1>
+                <p class="download-info"><a href="mailto:rainbowit10@gmail.com" class="btn btn-large">24/7 Support: Send
+                        Us a message from our Support Page</a></p>
+            </div>
+            <!-- masthead -->
+            <div id="intro">
+                <p class="highlight hero-unit">Thank you for purchasing our template. If you have any questions that are
+                    beyond the scope of this help file, please feel free to contact with us <a
+                        href="mailto:rainbowit10@gmail.com" target="_blank">Contact For Support</a></p>
+                <h4><b>IMPORTANT: It's built with React and It's not a regular HTML Template.</b></h4>
+            </div>
+            <!-- intro -->
+        </div>
+
+        <section id="started">
+            <div class="page-header">
+                <h3>Getting Started</h3>
+                <hr class="notop">
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Installation
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><b>Node.js and NPM :</b> You can download Node.js from https://nodejs.org. NPM comes bundled
+                            with Node.js.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    First, Choose your demo
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Now, we are giving you five demos. First, choose one of demo and enter that folder</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Install Npm Packages
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li><b>NPM :</b> You must have to <code>npm install</code> packages. You can do this by running
+                            npm install from the root of your project to install all the necessary dependencies.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Development server
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Run <code> gatsby develop </code> for a dev server. Navigate to http://localhost:8000/ . The app
+                            will automatically reload if you change any of the source files.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Build
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>Run <code>gatsby develop</code> to build the project. The build artifacts will be stored in
+                            the build/ directory. Use the <code> gatsby serve </code> flag for a production
+                            build.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="structure">
+            <div class="page-header">
+                <h3>Folder Structure</h3>
+                <hr class="notop">
+            </div>
+            <pre>fatima/                            // root folder
++
+|——thren
+|  |——config/
+|  |——public/
+|  |  |——favicon.ico
+|  |  |——index.html
+|  |——src/
+|  |  |——assets/
+|  |  |    |——css/                  -- css files
+|  |  |    |——fonts/                -- fonts files
+|  |  |    |——img/                  -- images files
+|  |  |——components/                -- Component Files Folder.
+|  |  |__containers/                -- All Containers/Sections are here.
+|  |  |——data/                      -- All Data(blog, projects, testimonial, teams, clients and page data) are include here
+|  |  |——pages/                     -- All Pages are here
+|  |  |——templates/                 -- All Templates(Blog Template, Project Template) are here
+|  |  |——theme/                     -- Themeing file
+|  |  |——utils/                     -- Utility functions
+|  |——static/
+|  |  |——icons/                     -- Mainfest Icons
+|  |  |——bg-image-1.jpg             -- Banner Image for facbook and twitter card
+|  |  |——favicon.ico
+|  |——gatsby-browser.js
+|  |——gatsby-config.js              -- Site configuration options for a Gatsby site
+|  |——gatsby-node.js
+|  |——package.json                  -- npm config: dependencies list
+|  |——package-lock.json
+
+</pre>
+            <span><b>Help</b>: Further details can be found here official documentation <a
+                    href="https://www.gatsbyjs.org/">https://www.gatsbyjs.org.</a></span>
+        </section>
+
+        <section id="htmlstructure">
+            <div class="page-header">
+                <h3>JSX Structure</h3>
+                <hr class="notop">
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Header Structure
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/header.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Footer Structure
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/footer.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="customization">
+            <div class="page-header">
+                <h3>Customization</h3>
+                <hr class="notop">
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    How to change Logo ?
+                </div>
+                <div class="card-body">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    How to change Page Content and Images ?
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li> You can change object data easily (Dynamic Sections : Demos, Blogs, Project, teams) <b>Path :
+                        </b> fatima/src/data/ </li>
+                    </ul>
+                    <img src="assets/img/data.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    How to change site configuration?
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li> You can change your site configuration data easily <b>Path :
+                        </b> gatsby-config.js </li>
+                    </ul>
+                    <img src="assets/img/config.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    How to change instagram information?
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li> Now, We are fetching data by username. If you want to show your instagram account data,
+                          create API. Or you can show instagram image by hashtag. <a href="https://www.gatsbyjs.org/packages/gatsby-source-instagram/">Click Here for more details</a>  <b>Path :
+                        </b> gatsby-config.js </li>
+                    </ul>
+                    <img src="assets/img/instagram.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    How to change contact form information?
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>We have make dynamic our contact form with <a href="https://getform.io/">Get Form</a></li>
+                    </ul>
+                    <img src="assets/img/getform.png" alt="">
+                    <br/>
+                    <img src="assets/img/contact-form.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Component Structure
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li> Easy to Understand props object Loop <b>Path : </b> fatima/src/components/
+                        </li>
+                    </ul>
+                    <img src="assets/img/component.png" alt="images">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Styled Components Structure
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li> This template built with styled-components and styled-system <b>Path : </b> fatima/src/components/
+                        </li>
+                    </ul>
+                    <img src="assets/img/styled-component.png" alt="images">
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="thanks">
+            <div class="page-header">
+                <h3>Thanks</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="thanks_span_style"
+                margin_0px_padding_0px_border_0px_outline_0px_font_weight_700_font_style_inherit_font_family_inherit_vertical_align_baseline"once_again_thankyou_for_for_purchasing_one_of_our_theme_span">
+                <span
+                    style="margin: 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 700; font-style: inherit; font-family: inherit; vertical-align: baseline;">Once
+                    again thank you for purchasing one of our Templates</span></h4>
+            <h2
+                style="margin: 0px 0px 18px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 20px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+                Best Regards</h2>
+            <h3
+                style="margin: 18px 0px 0px; padding: 0px; border: 0px; outline: 0px; font-weight: 100; font-size: 26px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; color: rgb(56, 56, 56);">
+                Rainbow-Themes</h3>
+        </section>
+        <hr />
+        <footer>
+            <p>Copyright Rainbow-Themes 2020 made with the <a href="#">Documenter</a></p>
+        </footer>
+    </div>
+    <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+        document.createElement('section');
+        var duration = '500',
+            easing = 'swing';
+    </script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-min.js"></script>
+</body>
+
+</html>
