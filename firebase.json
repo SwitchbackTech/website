@@ -48,6 +48,13 @@
           }
         ]
       }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/blog",
+        "type": 301
+      }
     ]
   }
 }
