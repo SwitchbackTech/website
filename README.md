@@ -1,7 +1,15 @@
 # Adding New Content
+- checkout to the `NewContent` branch
+- Merge `master` into`NewContent` to make sure up-to-date
 - Add to `/data/blogs`
-- Test dev build: `gatsby develop`
-- Test prod build: `gatsby build && firebase serve`
+- Test dev build: `gatsby clean && build && develop`
+- Test prod build: `firebase serve` (make sure you ran `gatsby build` beforehand so using latest)
+- Deploy: `firebase deploy`
+- Test from browser: switchback.tech
+- Push changes to `NewContent`
+- Merge `NewContent` into `master`
+- Checkout `develop`
+- Merge `master` into `develop` to get latest changes
 
 ----
 # Development Guide
