@@ -1,3 +1,9 @@
+# Adding New Content
+- Add to `/data/blogs`
+- Test dev build: `gatsby develop`
+- Test prod build: `gatsby build && firebase serve`
+
+----
 # Development Guide
 
 ## Running the app locally 

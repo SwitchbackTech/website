@@ -7,7 +7,6 @@ images: ['../images/github-prs.png', '../images/github-tests.png', '../images/gi
 category: hiring
 tags: 
     - non-technical
-is_featured: true
 custom_slug: '/hire-dev-best-practices'
 ---
 
