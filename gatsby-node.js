@@ -4,15 +4,6 @@ const _ = require("lodash");
 
 const prefix = "/blog"
 
-const cleanSlug = function(slug) {
-    if (slug.startsWith('/')) {
-        return slug.substr(1);  // remove prefixed '/'
-    }
-    else {
-        return slug;
-    }
-};
-
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
@@ -40,7 +31,6 @@ exports.onCreateNode = ({ node, actions }) => {
         node,
         name: "authorId",
         value: cleanText(node.frontmatter.author),
-        // value: cleanText(node.frontmatter.author.name),
       });
     }
   }
