@@ -6,10 +6,7 @@
 - Test prod build: `firebase serve` (make sure you ran `gatsby build` beforehand so using latest)
 - Deploy: `firebase deploy`
 - Test from browser: switchback.tech
-- Push changes to `NewContent`
-- Merge `NewContent` into `master`
-- Checkout `develop`
-- Merge `master` into `develop` to get latest changes
+- run `sbnc` script
 
 ----
 # Development Guide
