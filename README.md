@@ -34,6 +34,10 @@ See [Gatsby's Guide to Deploying to Firebase](https://www.gatsbyjs.org/docs/depl
 
 https://website-888.web.app/about
 
+### Unit Testing
+
+Run tests: `npm test`
+
 ## Config info
 
 5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
