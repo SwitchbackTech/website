@@ -58,9 +58,6 @@ const Footer = (props) => {
             <Col md={{ size: 4, offset: 1 }} lg={{ size: 3, offset: 1 }}>
               <FooterWidget>
                 <AddressWidget>
-                  <Anchor {...addressAnchor} path="tel:9209770813">
-                    (920) 977-0813
-                  </Anchor>
                   <Anchor
                     {...addressAnchor}
                     path="mailto:hello@switchback.tech"
