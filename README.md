@@ -6,10 +6,7 @@
 - Test prod build: `firebase serve` (make sure you ran `gatsby build` beforehand so using latest)
 - Deploy: `firebase deploy`
 - Test from browser: switchback.tech
-- Push changes to `NewContent`
-- Merge `NewContent` into `master`
-- Checkout `develop`
-- Merge `master` into `develop` to get latest changes
+- run `sbnc` script
 
 ----
 # Development Guide
@@ -36,6 +33,10 @@
 See [Gatsby's Guide to Deploying to Firebase](https://www.gatsbyjs.org/docs/deploying-to-firebase)
 
 https://website-888.web.app/about
+
+### Unit Testing
+
+Run tests: `npm test`
 
 ## Config info
 
