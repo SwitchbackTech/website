@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { navigate } from 'gatsby'
 import { FiSearch } from "react-icons/fi";
-import {inferSlug} from '../../../utils/utilFunctions';
 import WidgetBox, { WidgetTitle } from '../../../components/shared/widget-box'
 import Form, { Input } from '../../../components/shared/form'
 import Button from '../../../components/shared/button'

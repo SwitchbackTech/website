@@ -29,6 +29,9 @@
 
 2. See `index.html` in `/docs` for further info 
 
+### Running example app
+`bash /scripts/fatima.sh`
+
 ## Deployment
 See [Gatsby's Guide to Deploying to Firebase](https://www.gatsbyjs.org/docs/deploying-to-firebase)
 

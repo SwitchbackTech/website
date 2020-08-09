@@ -1,5 +1,5 @@
 ---
-title: 'Website Demo 1'
+title: 'Website Demo'
 date: "2020-07-07 08:00:00"
 author: 'Ty Hitzeman'
 format: 'video'

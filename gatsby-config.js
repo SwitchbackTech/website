@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Switchback`,
-    titleTemplate: `Epic Software`,
+    titleTemplate: `Epic GIS Apps`,
     description: `Switchback's Blog`,
     author: `Ty Hitzeman`,
     image: "banner.jpg",

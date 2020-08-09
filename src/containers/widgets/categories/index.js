@@ -1,6 +1,6 @@
 import React from 'react'
 import {useStaticQuery, graphql} from 'gatsby'
-import {flatDeep, cleanText, inferSlug} from '../../../utils/utilFunctions'
+import {flatDeep, inferSlug} from '../../../utils/utilFunctions'
 import WidgetBox, {WidgetTitle} from '../../../components/shared/widget-box'
 import Anchor from '../../../components/shared/anchor'
 import {CategroiesWrap, CategroiesItem} from './categories.stc'
