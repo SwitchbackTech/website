@@ -40,7 +40,7 @@ The program uses a combination of UI automation and API calls to get the current
 
 ### Lessons Learned
 
-I discuss some of the hard lessons learned in-depth in Part IV, but here's the summary:
+I discuss some of the hard lessons learned in-depth in [this behind the scenes video](https://www.youtube.com/watch?v=Dt4yB8kk4vs), but here's the summary:
 
 1. When building proof-of-concept, just do the easiest thing -- don't worry about the edge cases yet.
 
