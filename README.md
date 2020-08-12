@@ -1,12 +1,10 @@
-# Adding New Content
-- checkout to the `NewContent` branch
-- Merge `master` into`NewContent` to make sure up-to-date
-- Add to `/data/blogs`
-- Test dev build: `gatsby clean && build && develop`
-- Test prod build: `firebase serve` (make sure you ran `gatsby build` beforehand so using latest)
+# Adding New Content (not features, bug fixes)
+- Checkout to `master`
+- Add/Edit posts in `/data/blogs`
+- Test: `gatt`
 - Deploy: `firebase deploy`
 - Test from browser: switchback.tech
-- run `sbnc` script
+- Push changes up to `master`
 
 ----
 # Development Guide

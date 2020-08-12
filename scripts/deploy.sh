@@ -1,1 +1,0 @@
-gatsby build && firebase deploy

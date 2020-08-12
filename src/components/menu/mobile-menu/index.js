@@ -1,22 +1,27 @@
-import React from 'react'
-import NavBar, {NavItem, NavLink} from '../../shared/navbar'
-import {inferSlug} from '../../../utils/utilFunctions'
-import {MobileMenuWrap} from './mobilemenu.stc'
+import React from "react";
+import NavBar, { NavItem, NavLink } from "../../shared/navbar";
+import { inferSlug } from "../../../utils/utilFunctions";
+import { MobileMenuWrap } from "./mobilemenu.stc";
 
-export const MobileMenu = ({menuData}) => {
-    return (
-        <MobileMenuWrap>
-            <NavBar>
-                {menuData.map((menu, i) => {
-                    return(
-                        <NavItem 
-                            key={`menu-item-${i}`} 
-                            id={`menu-item-${i}`}>
-                            <NavLink path={inferSlug(menu.node.path)}>{menu.node.title}</NavLink>
-                        </NavItem>
-                    )
-                })}
-            </NavBar>
-        </MobileMenuWrap>
-    )
-}
+export const MobileMenu = ({ menuData }) => {
+  return (
+    <MobileMenuWrap>
+      <NavBar>
+        {menuData.map((menu, i) => {
+          return (
+            <NavItem key={`menu-item-${i}`} id={`menu-item-${i}`}>
+              <NavLink path={inferSlug(menu.node.path)}>
+                {menu.node.title}
+              </NavLink>
+            </NavItem>
+          );
+        })}
+        <NavItem key={`mainmenu-contact`}>
+          <NavLink path="https://forms.gle/cNYaLepbJHVLFMcLA" target="_blank">
+            Get In Touch
+          </NavLink>
+        </NavItem>
+      </NavBar>
+    </MobileMenuWrap>
+  );
+};
