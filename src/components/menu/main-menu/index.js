@@ -18,8 +18,11 @@ export const MainMenu = ({ menuData, ...props }) => {
           );
         })}
         <NavItem key={`mainmenu-contact`}>
+          <NavLink path="/podcast">Podcast</NavLink>
+        </NavItem>
+        <NavItem key={`mainmenu-contact`}>
           <NavLink path="https://forms.gle/cNYaLepbJHVLFMcLA" target="_blank">
-            Get In Touch
+            Contact
           </NavLink>
         </NavItem>
       </NavBar>
