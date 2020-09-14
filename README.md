@@ -1,4 +1,5 @@
 # Adding New Content (not features, bug fixes)
+
 - Checkout to `master`
 - Add/Edit posts in `/data/blogs`
 - Test: `gatt`
@@ -6,14 +7,16 @@
 - Test from browser: switchback.tech
 - Push changes up to `master`
 
-----
+---
+
 # Development Guide
 
-## Running the app locally 
- Navigate into your new site’s directory and start it up.
+## Running the app locally
 
-    ```shell 
-    cd website  
+Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd website
     gatsby develop
     ```
 
@@ -23,14 +26,18 @@
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-   Update file and watch the browser update in real time!
+Update file and watch the browser update in real time!
 
-2. See `index.html` in `/docs` for further info 
+2. See `index.html` in `/docs` for further info
 
 ### Running example app
-`bash /scripts/fatima.sh`
+
+See http://localhost:7999
+
+If it's not running, start by running this command from project root: `bash /scripts/fatima.sh`
 
 ## Deployment
+
 See [Gatsby's Guide to Deploying to Firebase](https://www.gatsbyjs.org/docs/deploying-to-firebase)
 
 https://website-888.web.app/about
@@ -49,7 +56,7 @@ Run tests: `npm test`
 
 8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-
 # Resources
+
 Original template: [Fatima, Themeforest](https://themeforest.net/item/fatima-creative-react-gatsby-blog-template/26418684)
 See `/template` for compressed version of original source
