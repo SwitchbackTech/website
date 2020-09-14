@@ -1,9 +1,8 @@
 const path = require(`path`);
-const { inferSlug, cleanText} = require("./src/utils/utilFunctions");
+const { inferSlug, cleanText } = require("./src/utils/utilFunctions");
 const _ = require("lodash");
 
-const prefix = "/blog"
-
+const prefix = "/blog";
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
@@ -43,6 +42,11 @@ exports.onCreateNode = ({ node, actions }) => {
   }
 };
 
+/**
+ * Every dir under /pages has its own page created by default
+ * This section is for auto-creating additional pages based on metadata
+ * and other dynamic elements
+ */
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
