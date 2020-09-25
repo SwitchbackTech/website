@@ -60,8 +60,6 @@ const Blog = ({ content, ...restProps }) => {
   };
 
   const articlePath = inferSlug(slug);
-  console.log("origSlug: ", slug);
-  console.log("articlePath", articlePath);
   const datePath = inferSlug(`date/${dateSlug}`);
   const categoryPath = inferSlug(`category/${category}`);
   const thumbnailPath = inferSlug(slug);
@@ -72,8 +70,7 @@ const Blog = ({ content, ...restProps }) => {
         <BlogInner>
           <BlogMedia>
             {format === "image" && (
-              //{/* <Thumbnail path={thumbnailPath} image={image} title={title} /> */}
-              <Thumbnail path={`/${slug}`} image={image} title={title} />
+              <Thumbnail path={thumbnailPath} image={image} title={title} />
             )}
             {format === "video" && (
               <Video
@@ -97,16 +94,11 @@ const Blog = ({ content, ...restProps }) => {
           <BlogContent>
             <BlogHeader>
               {(format === "quote" || format === "link") && category && (
-                <Category
-                  slug={`/category/${cleanText(category)}`}
-                  text={category}
-                />
+                <Category slug={categoryPath} text={category} />
               )}
               {title && (
                 <BlogTitle>
-                  <Link to={slug}>{truncateString(title, 30)}</Link>
-                  {/* <Link to={articlePath}>{truncateString(title, 30)}</Link> */}
-                  {/* <Link to={`/${slug}`}>{truncateString(title, 30)}</Link> */}
+                  <Link to={articlePath}>{truncateString(title, 30)}</Link>
                 </BlogTitle>
               )}
             </BlogHeader>

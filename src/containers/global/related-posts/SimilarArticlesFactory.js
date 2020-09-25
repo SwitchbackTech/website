@@ -53,10 +53,6 @@ export class SimilarArticlesFactory {
     }
 
     function getSlug(article) {
-      console.log(inferSlug(article.slug));
-      console.log(article.slug);
-
-      // return inferSlug(article.slug);
       return article.slug;
     }
 

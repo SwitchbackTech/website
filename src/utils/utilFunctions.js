@@ -32,8 +32,6 @@ const createList = ({ list, separator = "," }) => {
 };
 
 const inferSlug = function(text) {
-  //TODO handle situation where text starts with '/':
-  // if so, then don't add a leading '/' to avoid '//'s
   let cleanedText = cleanText(text);
 
   var addPrefix;
@@ -41,7 +39,8 @@ const inferSlug = function(text) {
   if (addPrefix) {
     return "/" + blogPrefix + "/" + cleanedText;
   } else {
-    return cleanedText;
+    // return cleanedText;
+    return `/${cleanedText}`;
   }
 };
 
