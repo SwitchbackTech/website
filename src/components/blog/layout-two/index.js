@@ -37,10 +37,10 @@ const Blog = ({ content, ...restProps }) => {
     images,
   } = content;
 
+  const articlePath = inferSlug(slug);
   const datePath = inferSlug("date/" + dateSlug);
   // const authorPath = inferSlug('author/' + authorId);
   const categoryPath = inferSlug("category/" + category);
-  // const thumbnailPath = cleanText(custom_slug);
 
   const { btnStyle, categoryStyle, ...restStyles } = restProps;
   let video_arr, video_id, video_channel;
@@ -63,7 +63,7 @@ const Blog = ({ content, ...restProps }) => {
         <BlogInner>
           <BlogMedia>
             {(format === "image" || format === "standard") && (
-              <Thumbnail path={`/${slug}`} image={image} title={title} />
+              <Thumbnail path={articlePath} image={image} title={title} />
             )}
             {format === "video" && (
               <Video
@@ -89,13 +89,13 @@ const Blog = ({ content, ...restProps }) => {
               )}
               {title && (
                 <BlogTitle>
-                  <Link to={`/${slug}`}>{title}</Link>
+                  <Link to={articlePath}>{title}</Link>
                 </BlogTitle>
               )}
               <BlogMetaWrap>
                 {date && (
                   <BlogMeta>
-                    <Link to={`${inferSlug(datePath)}`}>{date}</Link>
+                    <Link to={datePath}>{date}</Link>
                   </BlogMeta>
                 )}
               </BlogMetaWrap>
