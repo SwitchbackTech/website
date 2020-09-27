@@ -18,7 +18,7 @@ import {
   Gallery,
 } from "../../components/blog/blog-media";
 import ModalVideo from "../../components/shared/modal-video";
-import { cleanText, inferSlug } from "../../utils/utilFunctions";
+import { inferSlug } from "../../utils/utilFunctions";
 import SearchWidget from "../../containers/widgets/search";
 import RecentPostWidget from "../../containers/widgets/recent-post";
 import InstagramWidget from "../../containers/widgets/instagram";
@@ -58,10 +58,10 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
     custom_slug,
   } = data.markdownRemark.frontmatter;
 
-  const datePath = inferSlug("date/" + dateSlug);
   const authorPath = inferSlug("author/" + authorId);
   const categoryPath = inferSlug("category/" + category);
-  const thumbnailPath = cleanText(custom_slug);
+  const datePath = inferSlug("date/" + dateSlug);
+  const articlePath = inferSlug(custom_slug);
 
   const { html } = data.markdownRemark;
   let video_arr, video_id, video_channel;
@@ -91,7 +91,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                   <PostMedia>
                     {(format === "image" || format === "standard") && (
                       <Thumbnail
-                        path={`${thumbnailPath}`}
+                        path={articlePath}
                         image={image}
                         title={title}
                       />
@@ -117,14 +117,12 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                     <PostMeta>
                       {date && (
                         <BlogMeta>
-                          <Link to={`${inferSlug(datePath)}`}>{date}</Link>
+                          <Link to={datePath}>{date}</Link>
                         </BlogMeta>
                       )}
                       {author && (
                         <BlogMeta>
-                          <Link to={`${inferSlug(authorPath)}`}>
-                            {author.name}
-                          </Link>
+                          <Link to={authorPath}>{author.name}</Link>
                         </BlogMeta>
                       )}
                     </PostMeta>
@@ -136,7 +134,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                   <PostFooter>
                     <PostShare>
                       <h4>Share This:</h4>
-                      <SocialShare title={title} slug={custom_slug} />
+                      <SocialShare title={title} slug={articlePath} />
                     </PostShare>
                     <PostTags>
                       <Tags tags={tags} />
@@ -146,7 +144,7 @@ const SingleBlog = ({ data, pageContext, location, ...restProps }) => {
                 <RelatedPosts
                   category={category}
                   tags={tags}
-                  currentArticleSlug={custom_slug}
+                  currentArticleSlug={articlePath}
                 />
               </Col>
               <Col lg={4}>

@@ -1,4 +1,4 @@
-const prefix = "/blog";
+const blogPrefix = "blog";
 
 const cleanText = function(text) {
   if (!text) return;
@@ -35,11 +35,12 @@ const inferSlug = function(text) {
   let cleanedText = cleanText(text);
 
   var addPrefix;
-  text.includes(prefix) ? (addPrefix = false) : (addPrefix = true);
+  text.includes(blogPrefix) ? (addPrefix = false) : (addPrefix = true);
   if (addPrefix) {
-    return prefix + "/" + cleanedText;
+    return "/" + blogPrefix + "/" + cleanedText;
   } else {
-    return cleanedText;
+    // return cleanedText;
+    return `/${cleanedText}`;
   }
 };
 
