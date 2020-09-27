@@ -1,5 +1,4 @@
 import { includes, orderBy } from "lodash";
-import { inferSlug } from "../../../utils/utilFunctions";
 
 export class SimilarArticlesFactory {
   // (1.) Create by passing in articles, currentSlug

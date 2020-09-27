@@ -3,11 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FiChevronRight } from "react-icons/fi";
 import Button from "../../shared/button";
-import {
-  cleanText,
-  inferSlug,
-  truncateString,
-} from "../../../utils/utilFunctions";
+import { inferSlug, truncateString } from "../../../utils/utilFunctions";
 import BlogMeta, { Category, CommentNumber } from "../../blog/blog-meta";
 import ModalVideo from "../../shared/modal-video";
 import { Thumbnail, Video, Quote, Linked, Gallery } from "../blog-media";

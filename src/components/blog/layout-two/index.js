@@ -39,7 +39,6 @@ const Blog = ({ content, ...restProps }) => {
 
   const articlePath = inferSlug(slug);
   const datePath = inferSlug("date/" + dateSlug);
-  // const authorPath = inferSlug('author/' + authorId);
   const categoryPath = inferSlug("category/" + category);
 
   const { btnStyle, categoryStyle, ...restStyles } = restProps;
