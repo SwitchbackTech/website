@@ -1,9 +1,8 @@
 const path = require(`path`);
-const { inferSlug, cleanText} = require("./src/utils/utilFunctions");
+const { inferSlug, cleanText } = require("./src/utils/utilFunctions");
 const _ = require("lodash");
 
-const prefix = "/blog"
-
+const prefix = "/blog";
 
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
