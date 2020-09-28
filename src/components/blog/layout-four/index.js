@@ -3,11 +3,10 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FiChevronRight } from "react-icons/fi";
 import Button from "../../shared/button";
-import { cleanText, inferSlug } from "../../../utils/utilFunctions";
+import { inferSlug, truncateString } from "../../../utils/utilFunctions";
 import BlogMeta, { Category, CommentNumber } from "../../blog/blog-meta";
 import ModalVideo from "../../shared/modal-video";
 import { Thumbnail, Video, Quote, Linked, Gallery } from "../blog-media";
-import { truncateString } from "../../../utils/utilFunctions";
 import {
   BlogWrapper,
   BlogInner,
@@ -56,8 +55,10 @@ const Blog = ({ content, ...restProps }) => {
     setVideoOpen(false);
   };
 
+  const articlePath = inferSlug(slug);
   const datePath = inferSlug(`date/${dateSlug}`);
   const categoryPath = inferSlug(`category/${category}`);
+  const thumbnailPath = inferSlug(slug);
 
   return (
     <Fragment>
@@ -65,7 +66,7 @@ const Blog = ({ content, ...restProps }) => {
         <BlogInner>
           <BlogMedia>
             {format === "image" && (
-              <Thumbnail path={`/${slug}`} image={image} title={title} />
+              <Thumbnail path={thumbnailPath} image={image} title={title} />
             )}
             {format === "video" && (
               <Video
@@ -89,14 +90,11 @@ const Blog = ({ content, ...restProps }) => {
           <BlogContent>
             <BlogHeader>
               {(format === "quote" || format === "link") && category && (
-                <Category
-                  slug={`/category/${cleanText(category)}`}
-                  text={category}
-                />
+                <Category slug={categoryPath} text={category} />
               )}
               {title && (
                 <BlogTitle>
-                  <Link to={`/${slug}`}>{truncateString(title, 30)}</Link>
+                  <Link to={articlePath}>{truncateString(title, 30)}</Link>
                 </BlogTitle>
               )}
             </BlogHeader>
