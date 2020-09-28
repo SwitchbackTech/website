@@ -17,7 +17,7 @@ export const MainMenu = ({ menuData, ...props }) => {
             </NavItem>
           );
         })}
-        <NavItem key={`mainmenu-contact`}>
+        <NavItem key={`mainmenu-podcast`}>
           <NavLink path="/podcast">Podcast</NavLink>
         </NavItem>
         <NavItem key={`mainmenu-contact`}>
