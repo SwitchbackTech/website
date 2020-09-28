@@ -1,27 +1,27 @@
 [
-    {
-        "id": "about-page-header",
-        "title": "about switchback",
-        "tagline": ""
+  {
+    "id": "about-page-header",
+    "title": "about switchback",
+    "tagline": ""
+  },
+  {
+    "id": "about-page-banner",
+    "banner": "./images/banner/about-banner.jpg"
+  },
+  {
+    "id": "about-page-content",
+    "top_content": {
+      "heading": "Epic Software",
+      "content": {
+        "text1": "I create scalable web GIS apps. This is where I share my knowledge & opinions.",
+        "text2": "Creating a product that uses geo-data? I'd love to hear from you. Click the Contact button above or send me an email at hello@switchback.tech. --Ty Hitzeman"
+      }
     },
-    {
-        "id": "about-page-banner",
-        "banner": "./images/banner/about-banner.jpg"
-    },
-    {
-        "id": "about-page-content",
-        "top_content": {
-            "heading": "Epic Software",
-            "content": {
-                "text1": "I create scalable web GIS apps. This is where I share my knowledge & opinions.",
-                "text2": "Creating a product that uses geo-data? I'd love to hear from you. Click the Get In Touch button above or send me an email at hello@switchback.tech. --Ty Hitzeman"
-            }
-        },
-        "bottom_content": {
-            "heading": "",
-            "content": {
-                "text1": ""
-            }
-        }
+    "bottom_content": {
+      "heading": "",
+      "content": {
+        "text1": ""
+      }
     }
+  }
 ]

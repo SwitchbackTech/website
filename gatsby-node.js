@@ -42,6 +42,11 @@ exports.onCreateNode = ({ node, actions }) => {
   }
 };
 
+/**
+ * Every dir under /pages has its own page created by default
+ * This section is for auto-creating additional pages based on metadata
+ * and other dynamic elements
+ */
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
