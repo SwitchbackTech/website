@@ -16,6 +16,10 @@ export const MobileMenu = ({ menuData }) => {
             </NavItem>
           );
         })}
+        <NavItem key={`mainmenu-about`}>
+          <NavLink path="/about">About</NavLink>
+        </NavItem>
+
         <NavItem key={`mainmenu-podcast`}>
           <NavLink path="/podcast">Podcast</NavLink>
         </NavItem>

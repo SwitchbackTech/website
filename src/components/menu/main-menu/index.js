@@ -17,9 +17,15 @@ export const MainMenu = ({ menuData, ...props }) => {
             </NavItem>
           );
         })}
+
         <NavItem key={`mainmenu-podcast`}>
           <NavLink path="/podcast">Podcast</NavLink>
         </NavItem>
+
+        <NavItem key={`mainmenu-about`}>
+          <NavLink path="/about">About</NavLink>
+        </NavItem>
+
         <NavItem key={`mainmenu-contact`}>
           <NavLink path="https://forms.gle/cNYaLepbJHVLFMcLA" target="_blank">
             Contact
