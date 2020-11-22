@@ -3,27 +3,26 @@ import Emoji from "../../shared/emoji";
 import Mailchimp from "../../forms/mailchimp";
 import WidgetBox, { WidgetTitle } from "../../shared/widget-box";
 
-const TheCloseUpCTA = ({ widgetStyle }) => {
+const TheTrailheadCTA = ({ widgetStyle }) => {
   return (
     <WidgetBox {...widgetStyle}>
       <WidgetTitle>
-        <Emoji label="gift" symbol="🎁"></Emoji>Get <em>The Close Up</em>
+        <Emoji label="gift" symbol="🎁"></Emoji>Get <em>The Trailhead</em>
       </WidgetTitle>
       <p>
         Everytime an episode is released, we email subscribers exclusive goodies
         like promo codes for the featured product, show links, fun facts,
-        recommendations, and favorite quotes. And it's all free - just subscribe
-        below and enjoy!{" "}
+        recommendations, and favorite quotes. Just subscribe below and enjoy!{" "}
       </p>
       <Mailchimp />
     </WidgetBox>
   );
 };
 
-TheCloseUpCTA.defaultProps = {
+TheTrailheadCTA.defaultProps = {
   widgetStyle: {
     skin: "primary",
   },
 };
 
-export default TheCloseUpCTA;
+export default TheTrailheadCTA;
